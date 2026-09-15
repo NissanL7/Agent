@@ -1,8 +1,9 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type {Metadata} from 'next'
+import type {ReactNode} from 'react'
 
-export const metadata: Metadata = { title: 'Nissan AI Command Center', description: 'Multi-model AI and Gmail command center' }
+export const metadata:Metadata={title:'Nissan AI Command Center',description:'Multi-model AI and Gmail command center'}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body>{children}</body></html>
+export default function RootLayout({children}:{children:ReactNode}){
+ return <html lang="en"><body>{children}</body></html>
 }
