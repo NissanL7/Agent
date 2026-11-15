@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Class 10 SST — High Weightage Chapters &amp; Topics | Video Notes + Study Plan</title>
+<style>
+  :root{
+    --bg:#0f1220;
+    --bg2:#151a2e;
+    --card:#1a2038;
+    --card2:#202748;
+    --ink:#eef1fb;
+    --muted:#a6aecd;
+    --line:#2c3358;
+    --accent:#ffb703;
+    --accent2:#4cc9f0;
+    --hist:#ff7b54;
+    --civic:#4cc9f0;
+    --geo:#57cc99;
+    --eco:#c77dff;
+    --good:#57cc99;
+    --warn:#ffb703;
+    --hot:#ff5d73;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:86px}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Noto Sans","Noto Sans Devanagari",Helvetica,Arial,sans-serif;
+    line-height:1.65; font-size:16px;
+  }
+  a{color:var(--accent2); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* ---------- top bar ---------- */
+  header.top{
+    position:sticky; top:0; z-index:50; backdrop-filter:blur(10px);
+    background:rgba(15,18,32,.92); border-bottom:1px solid var(--line);
+  }
+  .top-inner{max-width:1240px; margin:0 auto; padding:10px 18px; display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+  .brand{font-weight:800; letter-spacing:.2px; font-size:15px; white-space:nowrap}
+  .brand span{color:var(--accent)}
+  .search{
+    flex:1 1 220px; min-width:180px; background:var(--bg2); border:1px solid var(--line);
+    color:var(--ink); padding:8px 12px; border-radius:999px; font-size:14px; outline:none;
+  }
+  .search:focus{border-color:var(--accent2)}
+  .pillbtn{
+    background:var(--card2); border:1px solid var(--line); color:var(--muted);
+    padding:7px 13px; border-radius:999px; font-size:13px; cursor:pointer; white-space:nowrap;
+  }
+  .pillbtn:hover{color:var(--ink); border-color:var(--accent2)}
+
+  /* ---------- layout ---------- */
+  .wrap{max-width:1240px; margin:0 auto; padding:0 18px 80px; display:flex; gap:28px; align-items:flex-start}
+  nav.toc{
+    position:sticky; top:78px; flex:0 0 250px; max-height:calc(100vh - 100px); overflow:auto;
+    background:var(--bg2); border:1px solid var(--line); border-radius:var(--radius); padding:14px;
+  }
+  nav.toc h4{margin:2px 0 10px; font-size:12px; letter-spacing:1.4px; text-transform:uppercase; color:var(--muted)}
+  nav.toc a{display:block; padding:6px 9px; border-radius:8px; color:var(--muted); font-size:13.5px; line-height:1.35}
+  nav.toc a:hover{background:var(--card); color:var(--ink); text-decoration:none}
+  nav.toc a.sub{padding-left:20px; font-size:12.8px; opacity:.85}
+  main{flex:1 1 auto; min-width:0}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:linear-gradient(135deg,#1d2547 0%,#2a1f4d 55%,#3a1f3d 100%);
+    border:1px solid var(--line); border-radius:20px; padding:28px; margin:22px 0 26px;
+  }
+  .hero h1{margin:0 0 6px; font-size:clamp(22px,3.4vw,34px); line-height:1.2}
+  .hero p.lead{margin:0 0 16px; color:#d9ddf2; max-width:70ch}
+  .meta{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+  .chip{background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); color:#e7eaff;
+        font-size:12.5px; padding:5px 11px; border-radius:999px}
+  .chip b{color:var(--accent)}
+
+  /* ---------- sections ---------- */
+  section{margin:0 0 34px; scroll-margin-top:88px}
+  h2{
+    font-size:clamp(19px,2.4vw,24px); margin:38px 0 4px; padding-bottom:9px;
+    border-bottom:2px solid var(--line); display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  h2 .num{
+    background:var(--accent); color:#221a00; font-size:13px; font-weight:800;
+    width:26px; height:26px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto;
+  }
+  h3{font-size:17px; margin:22px 0 8px; color:#fff}
+  p{margin:9px 0}
+  .sub{color:var(--muted); font-size:14px; margin:2px 0 14px}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin:14px 0}
+  .grid{display:grid; gap:14px}
+  @media(min-width:760px){ .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} }
+
+  ul,ol{margin:8px 0 8px; padding-left:22px}
+  li{margin:5px 0}
+  ul.clean{list-style:none; padding-left:0}
+  ul.tick li{list-style:none; position:relative; padding-left:26px}
+  ul.tick li::before{content:"✓"; position:absolute; left:0; top:0; color:var(--good); font-weight:700}
+
+  .badge{display:inline-block; font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:999px; margin:0 4px 4px 0; letter-spacing:.3px}
+  .b5{background:rgba(255,93,115,.16); color:#ff8f9f; border:1px solid rgba(255,93,115,.4)}
+  .b3{background:rgba(255,183,3,.16); color:#ffca4d; border:1px solid rgba(255,183,3,.4)}
+  .b1{background:rgba(76,201,240,.16); color:#7bdcf5; border:1px solid rgba(76,201,240,.4)}
+  .bmap{background:rgba(87,204,153,.16); color:#7ee2b8; border:1px solid rgba(87,204,153,.4)}
+  .bcase{background:rgba(199,125,255,.16); color:#dcaaff; border:1px solid rgba(199,125,255,.4)}
+  .bhot{background:rgba(255,93,115,.28); color:#ffd0d6; border:1px solid rgba(255,93,115,.6)}
+
+  .ts{font-size:11.5px; color:var(--muted); background:var(--bg2); border:1px solid var(--line);
+      padding:2px 8px; border-radius:6px; font-variant-numeric:tabular-nums; white-space:nowrap}
+
+  .hack{background:var(--card2); border:1px solid var(--line); border-left:5px solid var(--accent);
+        border-radius:12px; padding:16px 18px; margin:14px 0}
+  .hack h4{margin:0 0 6px; font-size:16px; color:var(--accent)}
+  .hack .tag{font-size:11px; letter-spacing:1.3px; text-transform:uppercase; color:var(--muted); font-weight:700}
+
+  /* chapter cards */
+  .ch{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:0; margin:16px 0; overflow:hidden}
+  .ch-head{padding:13px 18px; display:flex; gap:12px; align-items:baseline; flex-wrap:wrap; border-bottom:1px solid var(--line)}
+  .ch-head .cname{font-weight:700; font-size:16.5px; color:#fff}
+  .ch-head .cmarks{font-size:13px; color:var(--accent); font-weight:700}
+  .ch-body{padding:14px 18px 16px}
+  .ch-body ul{margin:4px 0}
+  .ch-body li{margin:6px 0}
+  .bar{height:6px; background:var(--bg2); border-radius:99px; overflow:hidden; margin:10px 0 2px}
+  .bar i{display:block; height:100%; border-radius:99px}
+  .hist .ch-head{background:linear-gradient(90deg,rgba(255,123,84,.20),transparent)}
+  .hist .bar i{background:var(--hist)}
+  .civic .ch-head{background:linear-gradient(90deg,rgba(76,201,240,.20),transparent)}
+  .civic .bar i{background:var(--civic)}
+  .geo .ch-head{background:linear-gradient(90deg,rgba(87,204,153,.20),transparent)}
+  .geo .bar i{background:var(--geo)}
+  .eco .ch-head{background:linear-gradient(90deg,rgba(199,125,255,.20),transparent)}
+  .eco .bar i{background:var(--eco)}
+
+  table{width:100%; border-collapse:collapse; font-size:14.5px; margin:12px 0}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+  th{background:var(--card2); font-size:13px; letter-spacing:.4px; text-transform:uppercase; color:var(--muted)}
+  tbody tr:nth-child(even){background:rgba(255,255,255,.025)}
+
+  blockquote{margin:12px 0; padding:12px 16px; border-left:4px solid var(--accent2);
+             background:var(--bg2); border-radius:0 10px 10px 0; color:#dfe4fb; font-style:italic}
+  blockquote b{font-style:normal}
+
+  .quote-hi{font-size:15px}
+  .note{background:rgba(76,201,240,.09); border:1px dashed rgba(76,201,240,.4);
+        border-radius:12px; padding:12px 16px; color:#d7e6f7; font-size:14.5px; margin:14px 0}
+  .warnbox{background:rgba(255,183,3,.09); border:1px dashed rgba(255,183,3,.45);
+        border-radius:12px; padding:12px 16px; color:#f6e6c0; font-size:14.5px; margin:14px 0}
+  .hotbox{background:rgba(255,93,115,.10); border:1px dashed rgba(255,93,115,.45);
+        border-radius:12px; padding:12px 16px; color:#ffdbe0; font-size:14.5px; margin:14px 0}
+
+  .spe{display:grid; gap:12px; margin:14px 0}
+  @media(min-width:700px){.spe{grid-template-columns:repeat(3,1fr)}}
+  .spe div{background:var(--card2); border:1px solid var(--line); border-radius:12px; padding:16px}
+  .spe .l{font-size:30px; font-weight:900; line-height:1}
+  .spe .s{color:var(--accent2)} .spe .p{color:var(--warn)} .spe .e{color:var(--eco)}
+
+  details{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 16px; margin:12px 0}
+  summary{cursor:pointer; font-weight:700; color:#fff}
+  details[open] summary{margin-bottom:8px}
+
+  /* checklist */
+  .chk{list-style:none; padding:0; margin:8px 0}
+  .chk li{display:flex; gap:11px; align-items:flex-start; background:var(--bg2);
+          border:1px solid var(--line); border-radius:10px; padding:10px 13px; margin:7px 0; font-size:14.5px}
+  .chk input{width:18px; height:18px; margin-top:3px; accent-color:var(--good); flex:0 0 auto; cursor:pointer}
+  .chk label{cursor:pointer; flex:1}
+  .chk li.done label{text-decoration:line-through; color:var(--muted)}
+
+  .kpi{background:var(--card2); border:1px solid var(--line); border-radius:12px; padding:14px; text-align:center}
+  .kpi b{display:block; font-size:24px; color:var(--accent)}
+  .kpi span{font-size:12.5px; color:var(--muted)}
+
+  footer{border-top:1px solid var(--line); margin-top:50px; padding:22px 0 10px; color:var(--muted); font-size:13.5px}
+
+  .progress{position:fixed; left:0; top:0; height:3px; background:var(--accent); width:0; z-index:99; transition:width .1s}
+
+  @media(max-width:900px){ nav.toc{display:none} }
+  @media print{
+    body{background:#fff; color:#111}
+    header.top, nav.toc, .progress{display:none}
+    .card,.ch,.hack,details,blockquote,.note,.warnbox,.hotbox,table th,table td,.chk li,.spe div{border-color:#bbb}
+    .card,.ch,.hack,details,blockquote,.note,.warnbox,.hotbox,.chk li,.spe div,.kpi{background:#f7f7fb !important; color:#111 !important}
+    .hero{background:#eef0fb !important; color:#111 !important}
+    th{background:#e8eaf5 !important; color:#111 !important}
+    h2,h3,.ch-head .cname,summary{color:#111 !important}
+    .sub,.muted,p,li{color:#222 !important}
+    a{color:#0645ad}
+    .wrap{display:block; max-width:none}
+    section{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">📘 Class&nbsp;10 <span>SST</span> · Video Notes + Study Plan</div>
+    <input class="search" id="q" type="search" placeholder="Search notes (e.g. Silk Route, dams, SHG, map work)…" />
+    <button class="pillbtn" id="printBtn">🖨️ Print / PDF</button>
+    <button class="pillbtn" id="resetBtn">↺ Reset ticks</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc" id="toc">
+    <h4>Contents</h4>
+    <a href="#overview">1. Video at a glance</a>
+    <a href="#coreidea">2. The core idea (why 95 vs 65)</a>
+    <a href="#skill">3. The superpower: pattern recognition</a>
+    <a href="#hacks">4. The 4 NCERT-decoding hacks</a>
+    <a href="#history">5. Book 1 — History <small>(20 marks)</small></a>
+    <a href="#civics">6. Book 2 — Civics <small>(20 marks)</small></a>
+    <a href="#geography">7. Book 3 — Geography <small>(20 marks)</small></a>
+    <a href="#economics">8. Book 4 — Economics <small>(20 marks)</small></a>
+    <a href="#mapwork">9. Map work master list</a>
+    <a href="#tiers">10. Priority tiers (what to do first)</a>
+    <a href="#spe">11. The S.P.E. cheat code</a>
+    <a href="#plan">12. Your 28-day study plan</a>
+    <a href="#crash">13. 10-day crash plan</a>
+    <a href="#daily">14. Daily routine &amp; answer-writing rules</a>
+    <a href="#examday">15. Exam-hall strategy</a>
+    <a href="#checklist">16. Master checklist</a>
+    <a href="#every">17. Every point, in video order</a>
+    <a href="#source">18. Source &amp; method</a>
+  </nav>
+
+  <main>
+
+  <div class="hero">
+    <h1>Class 10 SST — High Weightage Chapters &amp; Topics From NCERT</h1>
+    <p class="lead">Complete notes of everything the teacher says in the video, re-organised into chapter-wise, marks-wise notes — plus a ready-to-follow study plan built on the priorities he gives. <b>The whole plan runs on one rule: your NCERT is the leaked question paper.</b></p>
+    <div class="meta">
+      <span class="chip">🎬 Duration <b>15:42</b></span>
+      <span class="chip">👨‍🏫 Teacher <b>Digraj Singh Rajput</b></span>
+      <span class="chip">📚 Source <b>NCERT + CBSE previous pattern</b></span>
+      <span class="chip">🎯 Target <b>95%+</b></span>
+      <span class="chip">🗂️ 4 books × <b>20 marks</b></span>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>How to use this page:</b> First read sections 2–4 (the <i>method</i>), then use sections 5–8 as your chapter map while you sit with your NCERT open, and section 12 as the timetable. Tick off section 16 as you go — your ticks are saved in this browser. Press <b>Print / PDF</b> for a paper copy to keep inside your book.
+  </div>
+
+  <div class="card" style="border-color:var(--accent2)">
+    <h3>📗 Companion file — Chapter-wise Notes</h3>
+    <p>All 20 chapters, one section each, with <b>ready-to-write answer points</b> for every topic the teacher flags, probable questions with marks, and map/MCQ drills: <b><code>class10-sst-chapter-wise-notes.html</code></b> (open it alongside this page). This file is the <i>method + plan</i>; that one is the <i>content</i>.</p>
+  </div>
+
+  <!-- ================= 1 ================= -->
+  <section id="overview">
+    <h2><span class="num">1</span> Video at a glance</h2>
+    <p class="sub">The promise of the video, in the teacher's own words.</p>
+    <div class="grid g4">
+      <div class="kpi"><b>4</b><span>Hacks to decode NCERT</span></div>
+      <div class="kpi"><b>20+20+20+20</b><span>Marks split per book</span></div>
+      <div class="kpi"><b>80%</b><span>Civics/Economics long answers lifted from NCERT back exercises</span></div>
+      <div class="kpi"><b>S·P·E</b><span>Exam-hall rescue code</span></div>
+    </div>
+    <div class="card">
+      <h3>What the video gives you</h3>
+      <ul class="tick">
+        <li>The <b>high-weightage chapters and topics</b> from which your entire paper is made.</li>
+        <li>Something <b>more important</b>: the <b>skill</b> to open your book yourself and spot those topics — so this works no matter when you are watching it.</li>
+        <li>A <b>chapter-by-chapter, marks-by-marks</b> walkthrough of all four SST books: History, Civics, Geography, Economics.</li>
+        <li>A <b>last-resort technique</b> for the exam hall when your mind goes blank.</li>
+      </ul>
+      <blockquote class="quote-hi">“Your SST paper has already been leaked — and leaked completely legally. That leaked paper is your NCERT books. The paper setter asks nothing from outside it.”</blockquote>
+    </div>
+  </section>
+
+  <!-- ================= 2 ================= -->
+  <section id="coreidea">
+    <h2><span class="num">2</span> The core idea — why one student gets 95% and another 65%</h2>
+    <p class="sub">Everything else in the video is built on this one idea. <span class="ts">≈ 0:00 – 1:45</span></p>
+
+    <div class="card">
+      <h3>The half advice we all grew up with</h3>
+      <ul>
+        <li><b>“पढ़ते जाओ, रास्ता अपने आप मिल जाएगा” — “Keep studying, the path will find you.”</b> We have heard this line since childhood — in school, in coaching, and even at home.</li>
+        <li>The routine it produces: sit every evening, start from <b>page 1</b>, work hard for <b>two continuous hours</b>, and after closing the book at night, one strange question arrives — <i>“Will whatever I studied in the last two hours even come in the exam?”</i></li>
+        <li><b>The mistake is not yours. The mistake is of that half-given advice.</b> It told you that you have to walk — it never told you <b>in which direction</b> to walk.</li>
+        <li>So where does the direction come from? It sounds strange — but <b>the direction is already with you</b>.</li>
+      </ul>
+      <blockquote><b>The truth:</b> your SST paper is already leaked, and leaked legally. The leaked paper is your NCERT books. Nothing outside it is asked by the paper setter.</blockquote>
+    </div>
+
+    <div class="card">
+      <h3>Then why 95% vs 65–68%?</h3>
+      <ul>
+        <li>If the paper is already in everyone's hands — everyone has the NCERT — then why does one child bring <b>95%</b> while another gets stuck at <b>65 or 68%</b>?</li>
+        <li>Because <b>both have definitely <i>read</i> the book — but only one has <i>seen</i> it.</b></li>
+        <li>“What does seeing mean, sir? The same book is open in front of both of us, no?” — Here is what it means:</li>
+        <li><b>On the same page, one person can see “a question will be made from here”. The other sees nothing at all. He just keeps reading and reading.</b></li>
+        <li><b>That one thing is what makes the difference in your marks.</b></li>
+      </ul>
+    </div>
+
+    <div class="hotbox">
+      <b>Your comment task from the teacher (do it now, it works):</b> go to the comments and write
+      <b>“I will top in Social Science”</b> — and along with it, write the name of the <b>one chapter that scares you the most</b>.
+      Then check that chapter against the list below: does it still scare you, or do you know everything in it?
+    </div>
+  </section>
+
+  <!-- ================= 3 ================= -->
+  <section id="skill">
+    <h2><span class="num">3</span> The superpower: pattern recognition</h2>
+    <p class="sub">The skill that replaces “read everything”. <span class="ts">≈ 1:45 – 2:38</span></p>
+
+    <div class="grid g2">
+      <div class="card">
+        <h3 style="color:var(--hot)">❌ What a normal student does</h3>
+        <ul>
+          <li>Opens NCERT and sees only <b>text, text, text</b> — “read this paragraph, read this paragraph, read this paragraph”.</li>
+          <li>Feels that <b>the first line of page 1 is as important as the last line of page 50</b>.</li>
+          <li>Keeps reading, memorising and understanding <b>every single line</b>.</li>
+        </ul>
+        <p><b>Name of this trap: “The Illusion of Equality.”</b></p>
+        <p>Result: students <b>burn 90% of their energy in the first two chapters</b>, and by the time they reach the remaining chapters they are <b>completely exhausted</b>.</p>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--good)">✅ What a smart student does</h3>
+        <ul>
+          <li>Does <b>not</b> read NCERT like a normal student — reads it <b>through the examiner's eyes</b>.</li>
+          <li>Understands this clearly: when the CBSE examiner sits down to set your paper, <b>he does not pick questions from just anywhere</b>.</li>
+          <li>It is already <b>fixed in his mind</b>: “I need one 5-mark long answer.”</li>
+          <li>Which means <b>some areas are pre-identified</b> — and those areas can be found.</li>
+        </ul>
+        <p><b>That is pattern recognition — the superpower.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4 ================= -->
+  <section id="hacks">
+    <h2><span class="num">4</span> The 4 hacks that tell you where the paper is made from</h2>
+    <p class="sub">These are “your permanent glasses for decoding NCERT” — not just tricks. <span class="ts">≈ 2:38 – 4:06</span></p>
+
+    <div class="hack">
+      <span class="tag">Hack #1</span>
+      <h4>⭐⭐ The 5-Mark Answer Trigger</h4>
+      <p><b>Rule:</b> anywhere in NCERT, while reading, you find a <b>sub-heading with 4 or 5 points</b> — or a <b>causes / features / impact</b> type paragraph — <b>put a double star (⭐⭐) immediately</b>.</p>
+      <p><b>Why it works:</b> the examiner's marking scheme <b>demands 5 points</b>, and these paragraphs fit it perfectly.</p>
+      <p><b>Example:</b> <i>“Reasons for the rise of the tertiary sector”</i> — comes as a direct 5-mark or 3-mark question, because the points are plainly visible.</p>
+    </div>
+
+    <div class="hack">
+      <span class="tag">Hack #2</span>
+      <h4>⚖️ The 3-Mark Difference Trigger</h4>
+      <p><b>Rule:</b> wherever NCERT <b>stands two concepts face to face</b> (opposite each other), a <b>3-mark question is guaranteed</b>.</p>
+      <p><b>Examples he names:</b> <span class="badge b3">Belgium vs Sri Lanka</span> <span class="badge b3">Rabi vs Kharif</span> <span class="badge b3">Formal sector vs Informal sector</span> <span class="badge b3">Credit</span></p>
+      <p>Treat every “X vs Y” pair in your book as a 3-marker waiting to happen.</p>
+    </div>
+
+    <div class="hack">
+      <span class="tag">Hack #3</span>
+      <h4>🗺️ The Double-Priority Topic</h4>
+      <p><b>Rule:</b> if a <b>theory topic</b> in some chapter is <b>also officially in the CBSE map syllabus</b> location-wise, <b>make it a priority</b>.</p>
+      <p><b>Examples:</b> <span class="badge bmap">Jallianwala Bagh</span> in Nationalism in India; <span class="badge bmap">Dams</span> and <span class="badge bmap">Minerals</span> in Geography.</p>
+      <p><b>Why:</b> it can come in the map <b>and</b> it will come — “History's has to come in the map for sure” — <b>and the same topic will also come in theory</b>. One preparation, two places to score.</p>
+    </div>
+
+    <div class="hack">
+      <span class="tag">Hack #4</span>
+      <h4>🪞 The NCERT Exercise Mirror</h4>
+      <p><b>Rule:</b> especially in <b>Civics and Economics</b>, <b>80% of CBSE long answers are lifted directly from NCERT's back exercises</b> — you can talk about any subject.</p>
+      <p><b>So:</b> while reading NCERT, <b>if any paragraph looks like a direct answer to a back-exercise question</b>, understand that this topic is going to be <b>copy-pasted into your question paper</b>.</p>
+      <p><b>Action:</b> mark every back-exercise question against the paragraph in the chapter that answers it.</p>
+    </div>
+
+    <blockquote>“These four hacks are not just tricks. They are your <b>permanent glasses</b> for decoding NCERT. Now, wearing those glasses, let's start live testing.”</blockquote>
+  </section>
+
+  <!-- ================= 5 HISTORY ================= -->
+  <section id="history" class="hist">
+    <h2><span class="num">5</span> Book 1 — History <small>(20 marks)</small></h2>
+    <p class="sub">Live testing begins here. <span class="ts">≈ 4:06 – 6:14</span></p>
+
+    <div class="card">
+      <h3>🔑 The one rule for History</h3>
+      <ul>
+        <li><b>Every chapter is a chain of events.</b></li>
+        <li>If you <b>catch the chronology and timeline of the story</b>, answers start <b>framing themselves</b>.</li>
+        <li>So <b>do not make the mistake of treating History as just an ocean of dates</b>.</li>
+      </ul>
+      <div class="warnbox"><b>Marks reality check:</b> all four books come for <b>20–20 marks</b>. There is <b>no blueprint</b> saying how many marks come from which chapter. Everything below is <b>based on the previous pattern</b> — it is a probability map, not a guarantee.</div>
+    </div>
+
+    <div class="ch hist">
+      <div class="ch-head">
+        <span class="cname">Ch 1 — The Rise of Nationalism in Europe</span>
+        <span class="cmarks">5 to 7 marks</span>
+        <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge bhot">“Bahubali” chapter</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:100%"></i></div>
+        <ul>
+          <li><b>This is History's “Bahubali” (blockbuster) chapter — major long-answer questions come from it.</b></li>
+          <li><b>The unification trio is the most important part:</b> the unification of <b>Germany, Italy and Britain</b>.</li>
+          <li><b>German unification — what was Bismarck's role?</b> Three wars were fought over <b>seven years</b>.</li>
+          <li><b>Italian unification — the roles of Cavour, Garibaldi, Victor Emmanuel and Giuseppe Mazzini.</b></li>
+          <li><b>One question on unification is certain.</b> It will come in the exam — “you will come back to this video's comment section after the exam to say so.”</li>
+          <li><b>These come in continuous rotation</b> year after year.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch hist">
+      <div class="ch-head">
+        <span class="cname">Ch 2 — Nationalism in India</span>
+        <span class="cmarks">2 marks sure (map) + case-based / 5M</span>
+        <span class="badge b5">5M</span><span class="badge bcase">Case-based</span><span class="badge bmap">Map 2M</span><span class="badge bhot">Backbone of the paper</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:100%"></i></div>
+        <ul>
+          <li><b>2 marks are certain from map work</b> in this chapter — so those 2 marks simply have to be done.</li>
+          <li><b>This chapter is the backbone of your paper.</b> Why?</li>
+          <li><b>Case-based question / 5-mark question:</b> <i>“What was the impact of the First World War on the national movement?”</i></li>
+          <li><b>Question comes on the Jallianwala Bagh incident.</b></li>
+          <li><b>Two big movements: Civil Disobedience Movement and Non-Cooperation Movement</b> — questions come on the <b>participants of both movements</b>.</li>
+          <li><b>Guaranteed 2-mark map work from here:</b>
+            <ul>
+              <li><b>Congress sessions:</b> Calcutta (September 1920), Nagpur (1920), Madras (1927).</li>
+              <li><b>Important centres of the movement:</b> Champaran, Kheda, Ahmedabad, Jallianwala Bagh (Amritsar), Dandi.</li>
+            </ul>
+          </li>
+          <li><b>“It is certain — this will come.”</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch hist">
+      <div class="ch-head">
+        <span class="cname">Ch 3 — The Making of a Global World</span>
+        <span class="cmarks">small chapter — read it whole</span>
+        <span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:55%"></i></div>
+        <ul>
+          <li><b>The Silk Route is very important</b> in this chapter — questions on the Silk Route are made, always.</li>
+          <li>Along with that: <b>how diseases played an important role in the conquest of America.</b></li>
+          <li><b>It is a small chapter — if you want, you can read the entire chapter.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch hist">
+      <div class="ch-head">
+        <span class="cname">Ch 4 — Print Culture and the Modern World</span>
+        <span class="cmarks">3 to 4 marks</span>
+        <span class="badge bcase">Case-based</span><span class="badge b1">MCQ</span><span class="badge b3">3M theory</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:70%"></i></div>
+        <ul>
+          <li><b>3 to 4 marks come from Print Culture — case-based question and MCQs, for sure.</b></li>
+          <li>Why MCQs are certain: <b>this chapter has a lot of books, authors and all their names.</b></li>
+          <li><b>“Impact of print in Europe”</b> — a theory question is made on <b>what technological innovations took place.</b></li>
+          <li>These are the segments from which <b>theory questions can also be made</b> — but <b>case-based and objective are certain</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6 CIVICS ================= -->
+  <section id="civics" class="civic">
+    <h2><span class="num">6</span> Book 2 — Civics / Political Science <small>(20 marks)</small></h2>
+    <p class="sub"><span class="ts">≈ 6:14 – 8:34</span></p>
+
+    <div class="card">
+      <h3>🔑 Why Civics first?</h3>
+      <ul>
+        <li><b>In the whole of SST, if there are the easiest and most guaranteed marks anywhere, it is in Civics</b> — because in Civics, <b>direct, direct questions</b> are made.</li>
+        <li>The book comes for the <b>full 20 marks</b>, but marks <b>vary by chapter</b>: <b>2 to 5 marks</b> per chapter has been seen, going by the previous pattern.</li>
+      </ul>
+    </div>
+
+    <div class="ch civic">
+      <div class="ch-head">
+        <span class="cname">Ch 1 — Power Sharing</span>
+        <span class="cmarks">2 to 5 marks</span>
+        <span class="badge b5">5M</span><span class="badge b1">MCQ</span><span class="badge b3">3M</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:100%"></i></div>
+        <ul>
+          <li><b>CBSE's most favourite topic: the Belgium vs Sri Lanka case study</b> — you will have to write their <b>ethnic composition</b>. Simple, simple things.</li>
+          <li><b>Short, definition-type things</b> that can be asked for <b>1 mark / 2 marks</b>: <i>What is majoritarianism? What is community government?</i> This kind of thing is asked in short.</li>
+          <li><b>Lately he has been seeing MCQs being made from “Why power sharing is desirable?”</b></li>
+          <li><b>The last topic — “Different forms of power sharing”</b> is very important for theory questions, especially:
+            <ul>
+              <li>How power is shared among <b>different organs of government</b>.</li>
+              <li>How power is shared among <b>different levels of government</b>.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch civic">
+      <div class="ch-head">
+        <span class="cname">Ch 2 — Federalism</span>
+        <span class="cmarks">2 to 3 marks (sometimes 5)</span>
+        <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:85%"></i></div>
+        <ul>
+          <li><b>2 to 3 marks come from Federalism</b>; <b>sometimes 5-mark questions are also asked</b>.</li>
+          <li><b>Unitary vs Federal system</b> — the same comparison-type question can come in <b>3 marks</b>.</li>
+          <li><b>Features of Federalism</b> — directly an important <b>5-mark</b> part.</li>
+          <li><b>Coming together vs Holding together</b> federations — asked in <b>comparison type</b>.</li>
+          <li><b>The topics listed inside Union List, State List and Concurrent List</b> — those topics <b>definitely come as MCQs</b>.</li>
+          <li><b>Last part:</b> <i>what constitutional amendment happened in 1992 that strengthened decentralisation?</i> — <b>a direct 3-mark / 5-mark question.</b></li>
+          <li><b>“So it is sorted — questions come from here and here in this chapter.”</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch civic">
+      <div class="ch-head">
+        <span class="cname">Ch 3 — Gender, Religion and Caste</span>
+        <span class="cmarks">MCQ + theory</span>
+        <span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:70%"></i></div>
+        <ul>
+          <li><b>Secularism</b> — <b>both MCQ and theory</b> become important from here.</li>
+          <li><b>How is the oppression of women happening?</b> — <b>a 5-mark question definitely comes from this.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch civic">
+      <div class="ch-head">
+        <span class="cname">Ch 4 — Political Parties</span>
+        <span class="cmarks">3M / 5M</span>
+        <span class="badge b5">5M</span><span class="badge b3">3M</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:85%"></i></div>
+        <ul>
+          <li><b>Multi-party system</b>, and after it the <b>comparison — single-party system, two-party system</b> — this becomes an important part.</li>
+          <li><b>What are the functions of political parties?</b> — again, a <b>direct 5-mark question</b>.</li>
+          <li><b>National parties and regional parties</b> — these come as <b>“differentiate between”</b>.</li>
+          <li><b>Challenges to political parties</b> — a <b>potential question</b>; it can be asked <b>challenge by challenge individually</b>, and it also comes <b>directly in 3 marks / 5 marks</b>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch civic">
+      <div class="ch-head">
+        <span class="cname">Ch 5 — Outcomes of Democracy</span>
+        <span class="cmarks">usually one 5M question</span>
+        <span class="badge b5">5M</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:65%"></i></div>
+        <ul>
+          <li><b>Usually a big theory question does not come</b> from Outcomes of Democracy.</li>
+          <li><b>But in most cases one question comes:</b> <i>“How is democracy better than other forms of government?”</i></li>
+          <li><b>And when it comes, it comes directly in 5 marks.</b></li>
+          <li><b>If you just pay attention to the NCERT back-exercise questions here, more than half the work is done.</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7 GEOGRAPHY ================= -->
+  <section id="geography" class="geo">
+    <h2><span class="num">7</span> Book 3 — Geography <small>(20 marks)</small></h2>
+    <p class="sub"><span class="ts">≈ 8:34 – 11:56</span></p>
+
+    <div class="card">
+      <h3>🔑 The one rule for Geography</h3>
+      <ul>
+        <li><b>The biggest mistake in Geography:</b> people think it is all just a lot of facts. <b>You are wrong.</b></li>
+        <li><b>You have to remember the facts WITH the logic.</b></li>
+        <li>Example he gives: while teaching the Agriculture chapter in his one-shots he explained that <b>there is a logic behind everything</b>. <b>If cotton grows in the Maharashtra–Gujarat region, it is because black soil is there.</b></li>
+        <li><b>So apply the “WHY HERE?” logic to every fact.</b></li>
+        <li>(And yes — <b>it is true that Geography has a lot of facts.</b>)</li>
+      </ul>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 1 — Resources and Development</span>
+        <span class="cmarks">theory + MCQ</span>
+        <span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:65%"></i></div>
+        <ul>
+          <li><b>The theory part:</b> definition of <b>sustainable development</b>, <b>resource planning</b>, <b>three-step resource planning</b>, the <b>starting part</b> of the chapter, and <b>Agenda 21</b>.</li>
+          <li><b>MCQ area:</b> in <b>land degradation — in which state, for which cause, land degradation is happening</b> — that comes as an MCQ. Keep these things in mind.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 2 — Forest and Wildlife Resources</span>
+        <span class="cmarks">one 5M + MCQs</span>
+        <span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:75%"></i></div>
+        <ul>
+          <li><b>Map work does NOT come from this chapter.</b></li>
+          <li><b>There are only three buckets in this chapter.</b></li>
+          <li><b>Bucket 1 — what steps did the GOVERNMENT take</b> for conservation of forest and wildlife:
+            <ul>
+              <li>The <b>Wildlife (Protection) Act</b> becomes important.</li>
+              <li><b>Project Tiger</b> becomes an important question.</li>
+              <li><b>MCQs</b> come on things like <b>which tiger reserve is where</b>.</li>
+            </ul>
+          </li>
+          <li><b>Bucket 2 — what steps did the COMMUNITY take</b> for conservation: <b>those five points</b> — around <b>Sariska Tiger Reserve</b> (Alwar district of Rajasthan), the <b>Chipko movement</b>, the <b>Beej Bachao Andolan</b>, and <b>Joint Forest Management</b> — <b>that directly makes one 5-mark question.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 3 — Water Resources</span>
+        <span class="cmarks">3M / 5M</span>
+        <span class="badge b3">3M</span><span class="badge b5">5M</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:75%"></i></div>
+        <ul>
+          <li>A straightforward chapter — <b>also in three parts</b>, like the previous chapter.</li>
+          <li><b>Part 1 — causes of water scarcity and what its solutions can be.</b> This is the first theory part; the theory question comes from here.</li>
+          <li><b>Part 2 — dams and rainwater harvesting</b> are also given in this chapter: <b>the question is made on the positives and negatives of dams. This is important.</b></li>
+          <li><b>Part 3 — ancient hydrological structures:</b> <b>one question in 3 marks or 5 marks is made from here.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 4 — Agriculture</span>
+        <span class="cmarks">3M / 5M + objective</span>
+        <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:85%"></i></div>
+        <ul>
+          <li><b>Types of farming — primitive subsistence farming, intensive subsistence farming and commercial farming</b> — these are asked as <b>“compare between”</b> questions.</li>
+          <li><b>Different types of cropping season — Rabi, Kharif, Zaid</b> — this also comes in <b>objective</b>: you are given four points and told <b>“identify the type of cropping season”</b>.</li>
+          <li><b>The crops part: mainly asked only in objective questions.</b> The hack is simple — <b>use the chart</b> he gave and keep things in mind according to that chart.</li>
+          <li><b>🔥 But one part IS asked in theory in 3 marks / 5 marks: the Technological and Institutional Reforms topic. DO NOT MISS THIS TOPIC.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 5 — Minerals and Energy Resources</span>
+        <span class="cmarks">1 theory topic + objective</span>
+        <span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:70%"></i></div>
+        <ul>
+          <li><b>“Mode of occurrence of minerals” is a direct theory topic — remember this topic for theory.</b></li>
+          <li><b>After that it is all minerals and minerals — and all these minerals will be asked only in objective.</b> No big theory question is made from this.</li>
+          <li><b>The one theory bit in between:</b> <i>why conservation of minerals is important</i> — <b>value-based questions</b> can be made from this chapter in that way.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 6 — Manufacturing Industries</span>
+        <span class="cmarks">theory + objective</span>
+        <span class="badge b3">3M</span><span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:75%"></i></div>
+        <ul>
+          <li><b>This is the last chapter (for theory)</b> — because the chapter after it has <b>only map work</b>: Lifelines of National Economy.</li>
+          <li><b>The moment you open the chapter, the first topic gives four points directly: Importance of Manufacturing — theory comes from here.</b></li>
+          <li><b>After that come the individual manufacturing industries.</b> What will be made from them? <b>Not subjective questions — more objective questions.</b></li>
+          <li><b>But at the end:</b> <i>what damage are manufacturing industries causing to the environment?</i> — <b>that is a theory segment; theory questions will be made from there.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch geo">
+      <div class="ch-head">
+        <span class="cname">Ch 7 — Lifelines of National Economy</span>
+        <span class="cmarks">MAP WORK ONLY — no theory</span>
+        <span class="badge bmap">Map</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:45%"></i></div>
+        <ul>
+          <li><b>Theory does not come from this chapter. Only map work comes from Chapter 7.</b></li>
+          <li>He has <b>already covered its map work in his map-work video</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8 ECONOMICS ================= -->
+  <section id="economics" class="eco">
+    <h2><span class="num">8</span> Book 4 — Economics <small>(20 marks)</small></h2>
+    <p class="sub"><span class="ts">≈ 11:56 – 14:36</span></p>
+
+    <div class="card">
+      <h3>🔑 First correction</h3>
+      <p><b>“If I say four chapters are coming in this book, even that is wrong” — because the fourth chapter, Globalisation, has only one topic coming from it anyway.</b></p>
+    </div>
+
+    <div class="ch eco">
+      <div class="ch-head">
+        <span class="cname">Ch 1 — Development</span>
+        <span class="cmarks">theory + 1 objective</span>
+        <span class="badge b3">3M</span><span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:75%"></i></div>
+        <ul>
+          <li><b>Different people, different developmental goals</b> — write it down, <b>important topic; a theory-based question definitely comes from here.</b></li>
+          <li><b>How to compare different countries — the average income topic</b> becomes very important.</li>
+          <li><b>What is the World Bank's criteria</b> — it brings out the <b>World Development Report</b>; likewise the <b>Human Development Report brought out by UNDP, whose index treats education, health and income — all three — as important. A theory question comes on this.</b></li>
+          <li><b>Apart from this, one objective question comes</b> from the area where <b>charts are given and you have to analyse the data</b> and give the objective answer.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch eco">
+      <div class="ch-head">
+        <span class="cname">Ch 2 — Sectors of the Indian Economy</span>
+        <span class="cmarks">highest theory probability (with Ch 3)</span>
+        <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge bcase">Case-based</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:100%"></i></div>
+        <ul>
+          <li><b>This is a good chapter of Economics — the probability of theory questions coming is higher from Chapter 2 and Chapter 3.</b></li>
+          <li><b>The three sectors of the economy:</b> comparison between them, or <i>“explain with examples how they are interdependent.”</i> Questions are made on this.</li>
+          <li><b>Why did the tertiary sector rise in our country?</b> — a question is made on this.</li>
+          <li><b>Underemployment, GDP</b> — <b>short-answer type questions</b> can be made on these.</li>
+          <li><b>How to create more employment?</b> — why? <i>Because we see that more people are employed in the primary sector.</i> <b>A question is definitely made from this section.</b></li>
+          <li><b>Organised vs unorganised sector</b> — <b>case-based question comes</b>, and <b>differentiate</b> comes.</li>
+          <li><b>Public sector vs private sector</b> — <b>“compare between” type questions</b> come.</li>
+          <li><b>One theory question that is important and has been seen sometimes:</b> <i>why is the public sector still important today?</i> — <b>this question is definitely made.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch eco">
+      <div class="ch-head">
+        <span class="cname">Ch 3 — Money and Credit</span>
+        <span class="cmarks">highest theory probability (with Ch 2)</span>
+        <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">1M/2M</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:100%"></i></div>
+        <ul>
+          <li><b>Money and Credit has many theory parts.</b></li>
+          <li><b>Formal sector vs informal sector</b> — these comparison parts become important.</li>
+          <li><b>Loan activities of banks</b> — an <b>important theory question</b>.</li>
+          <li><b>Barter exchange? Double coincidence of wants?</b> — these become <b>small definition-type questions</b>.</li>
+          <li><b>🔥 Two topics that ALWAYS come in theory:</b>
+            <ul>
+              <li><b>Self Help Groups (SHGs)</b> — what are they? why are they? what is their importance?</li>
+              <li><b>Why should cheap and affordable credit be given?</b></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ch eco">
+      <div class="ch-head">
+        <span class="cname">Ch 4 — Globalisation</span>
+        <span class="cmarks">only one topic — low possibility</span>
+        <span class="badge b3">3M</span>
+      </div>
+      <div class="ch-body">
+        <div class="bar"><i style="width:35%"></i></div>
+        <ul>
+          <li><b>Globalisation is in itself a very small chapter.</b></li>
+          <li><b>Definition of globalisation</b>, and along with it the <b>two factors that enabled globalisation: technology and liberalisation</b>.</li>
+          <li><b>Individual questions can come on both</b>, or it can be asked as <i>“factors that have enabled globalisation.”</i></li>
+          <li><b>But the possibility is low.</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <blockquote>“After telling you all this, I think you now know what all you have to study before you go.”</blockquote>
+  </section>
+
+  <!-- ================= 9 MAP WORK ================= -->
+  <section id="mapwork">
+    <h2><span class="num">9</span> Map work master list</h2>
+    <p class="sub">Everything the teacher flags as map work, collected in one place. <span class="ts">≈ 5:31 · 11:49</span></p>
+    <div class="card">
+      <h3>📍 History — Nationalism in India <span class="badge bmap">2 marks, guaranteed</span></h3>
+      <table>
+        <thead><tr><th style="width:38%">Category</th><th>Places to mark</th></tr></thead>
+        <tbody>
+          <tr><td><b>Indian National Congress sessions</b></td><td>Calcutta (September 1920) · Nagpur (1920) · Madras (1927)</td></tr>
+          <tr><td><b>Important centres of the national movement</b></td><td>Champaran · Kheda · Ahmedabad · Jallianwala Bagh (Amritsar) · Dandi</td></tr>
+        </tbody>
+      </table>
+      <p><b>Teacher's words:</b> “Two marks are certain from map work in this chapter — so those two marks simply have to be done.” / “It is certain — this will come.”</p>
+      <h3>📍 Geography — Lifelines of National Economy <span class="badge bmap">Map only</span></h3>
+      <ul>
+        <li><b>Chapter 7 — theory does NOT come from it. Only map work.</b> He has already covered this map work in his map-work video.</li>
+        <li>Also flagged as <b>double-priority (theory + map)</b>: <b>dams</b> and <b>minerals</b> in Geography, and <b>Jallianwala Bagh</b> in History — these are in the CBSE map syllabus <i>and</i> in theory.</li>
+      </ul>
+      <div class="warnbox"><b>Chapters with NO map work:</b> Forest and Wildlife Resources (Chapter 2 of Geography) — the teacher says so explicitly.</div>
+    </div>
+  </section>
+
+  <!-- ================= 10 TIERS ================= -->
+  <section id="tiers">
+    <h2><span class="num">10</span> Priority tiers — what to study first</h2>
+    <p class="sub">Built strictly from the weightage the teacher assigns in the video.</p>
+    <table>
+      <thead><tr><th style="width:14%">Tier</th><th style="width:44%">Chapters</th><th>Why (as per the video)</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="badge bhot">Tier 1 — First</span></td>
+          <td>History 1, 2 · Civics 1, 2, 4 · Geography 4, 5, 6 · Economics 2, 3</td>
+          <td>5–7 marks · “backbone of the paper” · “certain question” · direct 5-markers · highest theory probability · “do not miss this topic”</td>
+        </tr>
+        <tr>
+          <td><span class="badge b3">Tier 2 — Next</span></td>
+          <td>History 3, 4 · Civics 3, 5 · Geography 1, 2, 3 · Economics 1</td>
+          <td>3–4 marks · case-based + MCQ certain · one 5-marker each · theory + MCQ mix</td>
+        </tr>
+        <tr>
+          <td><span class="badge b1">Tier 3 — Quick</span></td>
+          <td>Geography 7 (map only) · Economics 4 (one topic)</td>
+          <td>“Theory does not come from it” · “possibility is low” — a single sitting is enough</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note"><b>Special priority inside Tier 1 &amp; 2:</b> every <b>“X vs Y” pair</b> (3 marks), every <b>4–5 point sub-heading</b> (5 marks), every topic that is <b>both in the map syllabus and in theory</b>, and <b>every NCERT back-exercise question</b> (80% of Civics/Economics long answers).</div>
+  </section>
+
+  <!-- ================= 11 SPE ================= -->
+  <section id="spe">
+    <h2><span class="num">11</span> The S.P.E. cheat code — the biggest weapon</h2>
+    <p class="sub">For the exam hall when your mind goes blank. <span class="ts">≈ 14:36 – 15:14</span></p>
+    <div class="card">
+      <p><b>Situation:</b> suppose that even after knowing everything, <b>in the exam room your mind goes blank</b>. Then the biggest weapon comes in handy — <b>the S.P.E. cheat code</b>.</p>
+      <p>You are sitting in the exam hall. In front of you is <b>a big 5-mark question</b> — for example <i>“Explain the impact of print culture”</i> or <i>“Impact of globalisation.”</i> Your mind has gone completely blank. You cannot remember at all what to write.</p>
+      <div class="spe">
+        <div><div class="l s">S</div><h4>SOCIAL</h4><p>Start writing one point: <b>what difference did it make socially? How did people's thinking change?</b></p></div>
+        <div><div class="l p">P</div><h4>POLITICAL</h4><p>Start writing one point: <b>what happened politically?</b> The political impact of whatever is asked.</p></div>
+        <div><div class="l e">E</div><h4>ECONOMIC</h4><p>Next point: <b>what was the economic impact — on money, on trade, on jobs?</b></p></div>
+      </div>
+      <p><b>Result:</b> you will see that <b>without knowing anything, you have written a structured answer</b> — written in such a way that <b>you can get 5 marks if you build and write 5 points.</b></p>
+      <div class="hotbox"><b>But remember the teacher's own warning:</b> “Friends, <b>there is no substitute for hard work</b>.” When you know the important topics — <b>study them, and practise them.</b> S.P.E. is a rescue line, not the plan.</div>
+    </div>
+  </section>
+
+  <!-- ================= 12 PLAN ================= -->
+  <section id="plan">
+    <h2><span class="num">12</span> Your 28-day study plan</h2>
+    <p class="sub">Order and time-split derived directly from the priority tiers and marks the teacher assigns. ~2 hours of SST a day.</p>
+
+    <div class="card">
+      <h3>🎯 Phase 0 — Day 1: Mark your books (2 hours, no memorising)</h3>
+      <p class="sub">This is the single highest-value day. Do not read — <b>hunt</b>.</p>
+      <ul class="tick">
+        <li>Take all four NCERT books + a pencil + two coloured pens.</li>
+        <li>Apply <b>Hack #1</b>: put <b>⭐⭐</b> on every sub-heading with 4–5 points, causes, features or impact. (Target: 25–35 stars.)</li>
+        <li>Apply <b>Hack #2</b>: circle every <b>“X vs Y”</b> pair and write <b>“3M”</b> next to it.</li>
+        <li>Apply <b>Hack #3</b>: box every topic that is also in the <b>map syllabus</b> and write <b>“MAP+THEORY”</b>.</li>
+        <li>Apply <b>Hack #4</b>: at the top of each chapter, list the <b>back-exercise questions</b> and put the page number of the paragraph that answers them.</li>
+        <li><b>Do NOT</b> start from page 1 and read straight through — that is exactly the “Illusion of Equality” trap.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🗓️ Days 2–9 — Tier 1 chapters (the marks engine)</h3>
+      <table>
+        <thead><tr><th>Day</th><th>Book</th><th>Work</th><th>Output</th></tr></thead>
+        <tbody>
+          <tr><td>2–3</td><td>History</td><td>Ch 1 Rise of Nationalism in Europe — unification trio: Germany (Bismarck, 3 wars / 7 years), Italy (Cavour, Garibaldi, Victor Emmanuel, Mazzini), Britain</td><td>2 × 5M answers written + timeline</td></tr>
+          <tr><td>4–5</td><td>History</td><td>Ch 2 Nationalism in India — WWI impact, Jallianwala Bagh, NCM &amp; CDM participants + <b>full map work</b></td><td>1 × 5M + 1 case-based + map page</td></tr>
+          <tr><td>6</td><td>Civics</td><td>Ch 1 Power Sharing (Belgium vs Sri Lanka ethnic composition; majoritarianism; community government; why power sharing is desirable; forms of power sharing) + Ch 2 Federalism (unitary vs federal; features; coming together vs holding together; three lists; 1992 amendment)</td><td>4 × 3M + 2 × 5M</td></tr>
+          <tr><td>7</td><td>Civics</td><td>Ch 4 Political Parties (multi vs single vs two-party; functions; national vs regional; challenges)</td><td>2 × 5M + 1 differentiate</td></tr>
+          <tr><td>8</td><td>Economics</td><td>Ch 2 Sectors (3 sectors + interdependence; rise of tertiary sector; underemployment, GDP; creating more employment; organised vs unorganised; public vs private; importance of public sector)</td><td>3 × 5M + 1 case-based</td></tr>
+          <tr><td>9</td><td>Economics</td><td>Ch 3 Money &amp; Credit (formal vs informal; loan activities of banks; barter; double coincidence of wants; <b>SHGs</b>; <b>cheap &amp; affordable credit</b>)</td><td>3 × 5M + definitions</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>🗓️ Days 10–15 — Geography core + remaining Tier 1</h3>
+      <table>
+        <thead><tr><th>Day</th><th>Chapter</th><th>Work</th></tr></thead>
+        <tbody>
+          <tr><td>10</td><td>Geo 4 Agriculture</td><td>3 farming types (compare between); Rabi/Kharif/Zaid (objective); crop chart; <b>🔥 Technological &amp; Institutional Reforms — do not miss</b></td></tr>
+          <tr><td>11</td><td>Geo 5 Minerals &amp; Energy</td><td>Mode of occurrence (theory, must remember); all minerals → objective only; conservation → value-based</td></tr>
+          <tr><td>12</td><td>Geo 6 Manufacturing Industries</td><td>Importance of manufacturing (4 points); individual industries → objective; environmental damage (theory)</td></tr>
+          <tr><td>13</td><td>Geo 3 Water Resources</td><td>Causes + solutions of scarcity; dams positives &amp; negatives; rainwater harvesting; ancient hydrological structures</td></tr>
+          <tr><td>14</td><td>Geo 2 Forest &amp; Wildlife</td><td>Government steps (Wildlife Protection Act, Project Tiger); community steps — the <b>five points</b> (Sariska/Alwar, Chipko, Beej Bachao Andolan, JFM) → one 5M</td></tr>
+          <tr><td>15</td><td>Geo 1 Resources &amp; Development</td><td>Sustainable development; resource planning (3 steps); Agenda 21; land degradation state-wise causes (MCQ)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>🗓️ Days 16–20 — Tier 2 chapters</h3>
+      <table>
+        <thead><tr><th>Day</th><th>Work</th></tr></thead>
+        <tbody>
+          <tr><td>16</td><td>History 3 Making of a Global World — <b>Silk Route</b>; how diseases helped the conquest of America. Small chapter: read it whole.</td></tr>
+          <tr><td>17</td><td>History 4 Print Culture — books/authors/names (MCQ); impact of print in Europe; technological innovations (theory); case-based.</td></tr>
+          <tr><td>18</td><td>Civics 3 Gender, Religion &amp; Caste — secularism (MCQ + theory); oppression of women (5M).</td></tr>
+          <tr><td>19</td><td>Civics 5 Outcomes of Democracy — back exercises only; <i>“How is democracy better than other forms of government?”</i> (5M).</td></tr>
+          <tr><td>20</td><td>Economics 1 Development — different people different goals; average income comparison; World Bank / World Development Report; UNDP Human Development Report (education, health, income); chart/data objective.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>🗓️ Days 21–23 — Tier 3 + maps</h3>
+      <ul class="tick">
+        <li><b>Day 21:</b> Economics 4 Globalisation — definition + the two enabling factors (technology, liberalisation). One sitting.</li>
+        <li><b>Day 22:</b> Geography 7 Lifelines of National Economy — <b>map only, no theory</b>. Also revise <b>dams</b> and <b>minerals</b> for map + theory.</li>
+        <li><b>Day 23:</b> <b>Map drill.</b> Blank India map + blank world map: Congress sessions (Calcutta 1920, Nagpur 1920, Madras 1927); centres (Champaran, Kheda, Ahmedabad, Jallianwala Bagh/Amritsar, Dandi); Geography Ch 7 items. Do it 3 times.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🗓️ Days 24–28 — Revision, exercises &amp; papers</h3>
+      <table>
+        <thead><tr><th>Day</th><th>Work</th></tr></thead>
+        <tbody>
+          <tr><td>24</td><td><b>NCERT back-exercise marathon (Hack #4).</b> Every back question of Civics + Economics + the starred chapters of History &amp; Geography. Write, don't read.</td></tr>
+          <tr><td>25</td><td>Objective sprint: all MCQ areas he names — books/authors (Print Culture), Union/State/Concurrent List, tiger reserves, land degradation state-wise, cropping seasons, crops, minerals, charts in Development.</td></tr>
+          <tr><td>26</td><td><b>Full paper 1</b> in 3 hours, timed, then self-check with the marking scheme (5 points per 5-marker).</td></tr>
+          <tr><td>27</td><td><b>Full paper 2</b> in 3 hours. Use <b>S.P.E.</b> for any answer where you blank out — then go back and learn that topic properly.</td></tr>
+          <tr><td>28</td><td>Only: ⭐⭐ points, all “vs” pairs, map page, and the 2 topics he says always come (SHGs, cheap &amp; affordable credit). Sleep well.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= 13 CRASH ================= -->
+  <section id="crash">
+    <h2><span class="num">13</span> 10-day crash plan (if the exam is close)</h2>
+    <table>
+      <thead><tr><th>Day</th><th>Focus</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Marking day (Phase 0) — 3 hours, hacks only. Then History 1 unification.</td></tr>
+        <tr><td>2</td><td>History 2 + full History map work (2 guaranteed marks).</td></tr>
+        <tr><td>3</td><td>Civics 1 + 2 + 4 (direct questions — fastest marks in SST).</td></tr>
+        <tr><td>4</td><td>Economics 2 + 3 (highest theory probability).</td></tr>
+        <tr><td>5</td><td>Geography 4 + 5 + 6.</td></tr>
+        <tr><td>6</td><td>Geography 1 + 2 + 3 + Ch 7 map.</td></tr>
+        <tr><td>7</td><td>History 3 + 4; Civics 3 + 5; Economics 1.</td></tr>
+        <tr><td>8</td><td>Economics 4 + all objective/MCQ areas + map revision.</td></tr>
+        <tr><td>9</td><td>NCERT back exercises of Civics + Economics + starred chapters. One full paper.</td></tr>
+        <tr><td>10</td><td>⭐⭐ revision + S.P.E. practice on 5 unseen 5-markers.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ================= 14 DAILY ================= -->
+  <section id="daily">
+    <h2><span class="num">14</span> Daily routine &amp; answer-writing rules</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>⏱️ The 2-hour SST block</h3>
+        <ul>
+          <li><b>0–10 min:</b> open the chapter, look at headings only. Predict questions using the 4 hacks <b>before</b> reading.</li>
+          <li><b>10–45 min:</b> read only the ⭐⭐ parts and the “vs” pairs.</li>
+          <li><b>45–80 min:</b> <b>write</b> answers from memory — 1 × 5M and 1 × 3M. Closed book.</li>
+          <li><b>80–110 min:</b> objective/MCQ round for that chapter; fill the map page if applicable.</li>
+          <li><b>110–120 min:</b> match your written answers with the NCERT back exercises (<b>Hack #4</b>).</li>
+        </ul>
+        <div class="warnbox"><b>Never</b> spend the whole block reading, and <b>never</b> start every day from page 1 of chapter 1 — that is the 90%-energy trap.</div>
+      </div>
+      <div class="card">
+        <h3>✍️ Answer-writing rules (from the marking scheme logic)</h3>
+        <ul>
+          <li><b>5-marker = exactly 5 points.</b> That is what the marking scheme demands — so count your points before you stop.</li>
+          <li>Every 5-marker gets <b>5 numbered points</b>, each in one separate line, each with 1–2 lines of explanation.</li>
+          <li><b>3-marker “X vs Y”</b> → always a <b>two-column comparison</b> (basis · X · Y) with 3 differences.</li>
+          <li><b>1/2-markers</b> → <b>definition + one example</b>. Nothing more.</li>
+          <li><b>Case-based</b> → read the source, underline the clue line, answer the question — never write a general essay.</li>
+          <li><b>Blank?</b> → S·P·E. (Social → Political → Economic.)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <h3>📅 Weekly rhythm</h3>
+      <ul>
+        <li><b>6 days study + 1 day revision.</b> On revision day, do only ⭐⭐ points, “vs” pairs and maps — full chapters again are a trap.</li>
+        <li><b>Two books per day max</b> (e.g. History morning, Economics evening) so the four 20-mark blocks move together.</li>
+        <li><b>Every Sunday:</b> one map drill + one timed 5-marker test.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= 15 EXAM DAY ================= -->
+  <section id="examday">
+    <h2><span class="num">15</span> Exam-hall strategy</h2>
+    <div class="card">
+      <ul class="tick">
+        <li><b>First 15 minutes:</b> read the whole paper. Mark the questions you can answer at 5/5.</li>
+        <li><b>Attempt the sure marks first:</b> map work (2 marks are certain), then the “vs” pairs, then the ⭐⭐ 5-markers.</li>
+        <li><b>Count points as you write</b> — 5-marker = 5 points. Stop at 5, move on.</li>
+        <li><b>Blank on a 5-marker?</b> Use <b>S.P.E.</b> — Social point, Political point, Economic point, then expand to 5.</li>
+        <li><b>Do not leave anything blank.</b> A structured attempt fetches marks; a blank fetches zero.</li>
+        <li><b>Last 10 minutes:</b> numbering, underlining headings, and a quick check that every 5-marker has 5 points.</li>
+      </ul>
+      <blockquote>“This video is a guideline — a torch — to reduce that 400-page burden and push yourself to 95%. <b>Do not panic at all</b>, because until we crack these exams together, we won't leave them.”</blockquote>
+    </div>
+  </section>
+
+  <!-- ================= 16 CHECKLIST ================= -->
+  <section id="checklist">
+    <h2><span class="num">16</span> Master checklist — tick as you finish</h2>
+    <p class="sub">Your ticks are saved in this browser. Use <b>Reset ticks</b> in the top bar to start over.</p>
+    <ul class="chk" id="chk">
+      <li><input type="checkbox" id="c01"><label for="c01">Marked all four NCERTs with the 4 hacks (⭐⭐ points, “vs” pairs, map+theory, back-exercise mapping)</label></li>
+      <li><input type="checkbox" id="c02"><label for="c02">History 1 — Germany, Italy, Britain unification + Bismarck, Cavour, Garibaldi, Victor Emmanuel, Mazzini</label></li>
+      <li><input type="checkbox" id="c03"><label for="c03">History 2 — WWI impact on national movement, Jallianwala Bagh, NCM &amp; CDM participants</label></li>
+      <li><input type="checkbox" id="c04"><label for="c04">History map — Congress sessions (Calcutta 1920, Nagpur 1920, Madras 1927) + centres (Champaran, Kheda, Ahmedabad, Jallianwala Bagh/Amritsar, Dandi)</label></li>
+      <li><input type="checkbox" id="c05"><label for="c05">History 3 — Silk Route + diseases and the conquest of America</label></li>
+      <li><input type="checkbox" id="c06"><label for="c06">History 4 — books/authors names, impact of print in Europe, technological innovations</label></li>
+      <li><input type="checkbox" id="c07"><label for="c07">Civics 1 — Belgium vs Sri Lanka ethnic composition, majoritarianism, community government, forms of power sharing</label></li>
+      <li><input type="checkbox" id="c08"><label for="c08">Civics 2 — unitary vs federal, features of federalism, coming together vs holding together, three lists, 1992 amendment</label></li>
+      <li><input type="checkbox" id="c09"><label for="c09">Civics 3 — secularism + oppression of women (5M)</label></li>
+      <li><input type="checkbox" id="c10"><label for="c10">Civics 4 — multi/two/single party system, functions of parties, national vs regional, challenges</label></li>
+      <li><input type="checkbox" id="c11"><label for="c11">Civics 5 — “How is democracy better than other forms of government?” + all back exercises</label></li>
+      <li><input type="checkbox" id="c12"><label for="c12">Geography 1 — sustainable development, 3-step resource planning, Agenda 21, land degradation causes state-wise</label></li>
+      <li><input type="checkbox" id="c13"><label for="c13">Geography 2 — Wildlife Protection Act, Project Tiger, and the 5 community points (Sariska/Alwar, Chipko, Beej Bachao Andolan, JFM)</label></li>
+      <li><input type="checkbox" id="c14"><label for="c14">Geography 3 — water scarcity causes &amp; solutions, dams positives &amp; negatives, ancient hydrological structures</label></li>
+      <li><input type="checkbox" id="c15"><label for="c15">Geography 4 — 3 farming types, Rabi/Kharif/Zaid, crop chart, <b>Technological &amp; Institutional Reforms</b></label></li>
+      <li><input type="checkbox" id="c16"><label for="c16">Geography 5 — mode of occurrence of minerals, minerals for objective, conservation/value-based</label></li>
+      <li><input type="checkbox" id="c17"><label for="c17">Geography 6 — importance of manufacturing (4 points), industries for objective, environmental damage</label></li>
+      <li><input type="checkbox" id="c18"><label for="c18">Geography 7 map — Lifelines of National Economy (map only) + dams &amp; minerals for map</label></li>
+      <li><input type="checkbox" id="c19"><label for="c19">Economics 1 — different goals, average income comparison, World Bank WDR, UNDP HDR (education, health, income), data charts</label></li>
+      <li><input type="checkbox" id="c20"><label for="c20">Economics 2 — 3 sectors &amp; interdependence, rise of tertiary sector, underemployment, GDP, more employment, organised vs unorganised, public vs private, importance of public sector</label></li>
+      <li><input type="checkbox" id="c21"><label for="c21">Economics 3 — formal vs informal, loan activities of banks, barter, double coincidence of wants, <b>SHGs</b>, <b>cheap &amp; affordable credit</b></label></li>
+      <li><input type="checkbox" id="c22"><label for="c22">Economics 4 — definition of globalisation + technology &amp; liberalisation</label></li>
+      <li><input type="checkbox" id="c23"><label for="c23">Practised S.P.E. on at least 5 unseen 5-mark questions</label></li>
+      <li><input type="checkbox" id="c24"><label for="c24">Solved 2 full papers in 3 hours, timed, with point-counting</label></li>
+    </ul>
+  </section>
+
+  <!-- ================= 17 EVERY POINT ================= -->
+  <section id="every">
+    <h2><span class="num">17</span> Every point the teacher makes, in video order</h2>
+    <p class="sub">A complete, sequential log so nothing from the video is missed. Timestamps are approximate (estimated by position in the speech).</p>
+
+    <details>
+      <summary>A. The opening problem <span class="ts">≈ 0:00 – 1:24</span></summary>
+      <ol>
+        <li>“Keep studying, the path will find you” — heard since childhood, in school, coaching and at home.</li>
+        <li>We sit every evening, start from page 1, work hard for two continuous hours.</li>
+        <li>After closing the book at night, a strange question comes: will what I studied in those two hours even come in the exam?</li>
+        <li>The mistake is not yours — it is the mistake of the half-given advice.</li>
+        <li>It told us to walk, not which direction to walk.</li>
+        <li>The direction is already with you.</li>
+        <li>The truth: your SST paper is already leaked, and leaked legally.</li>
+        <li>The leaked paper is your NCERT books; the paper setter asks nothing from outside it.</li>
+        <li>So why does one child get 95% and another stay stuck at 65–68%?</li>
+        <li>Both have read the book — but only one has <b>seen</b> it.</li>
+        <li>On the same page, one person can see “a question will be made from here”; the other sees nothing.</li>
+        <li>That one thing is what makes the difference in your marks.</li>
+        <li>Today we learn exactly that: the high-weightage chapters and topics from which your whole paper is made.</li>
+        <li>More important: the skills to find those topics yourself, whenever you watch this.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>B. Introduction &amp; comment task <span class="ts">≈ 1:24 – 1:45</span></summary>
+      <ol start="15">
+        <li>“Hello everybody, this is Digraj Singh Rajput, welcome to our channel.”</li>
+        <li>Before we go ahead, write in the comments: <b>“I will top in Social Science”</b>.</li>
+        <li>Also write the name of the chapter that scares you the most.</li>
+        <li>Let's see, against the list coming next, whether those chapters scare you or you know everything in them.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>C. The superpower — pattern recognition <span class="ts">≈ 1:45 – 2:38</span></summary>
+      <ol start="19">
+        <li>First, understand the skill: the superpower is <b>pattern recognition</b>.</li>
+        <li>What happens: a normal student opens NCERT and sees only text, text, text — “read this para, read this para”.</li>
+        <li>He feels the first line of page 1 is as important as the last line of page 50.</li>
+        <li>He keeps reading, memorising, understanding every line.</li>
+        <li>We call this the <b>Illusion of Equality</b>.</li>
+        <li>In this trap, students spend 90% of their energy on the first two chapters and are exhausted by the rest.</li>
+        <li>The smart student looks at NCERT not like a normal student, but <b>through the examiner's eyes</b>.</li>
+        <li>When the CBSE examiner sits to set the paper, he does not make questions from anywhere.</li>
+        <li>It is already fixed in his mind: “I need one 5-mark long answer.”</li>
+        <li>So some areas remain pre-identified.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>D. The four hacks <span class="ts">≈ 2:38 – 4:06</span></summary>
+      <ol start="29">
+        <li><b>Hack #1 — 5-mark answer trigger:</b> sub-heading with 4–5 points, causes, features, impact → ⭐⭐ double star; the marking scheme demands 5 points. Example: reasons for the rise of the tertiary sector → direct 5M/3M.</li>
+        <li><b>Hack #2 — 3-mark difference trigger:</b> two concepts stood face to face → Belgium vs Sri Lanka, Rabi vs Kharif, formal vs informal sector, credit → 3-mark guaranteed.</li>
+        <li><b>Hack #3 — double priority topic:</b> theory topic that is also in the CBSE map syllabus → Jallianwala Bagh; dams; minerals → comes in map <i>and</i> theory; History's map is certain.</li>
+        <li><b>Hack #4 — NCERT exercise mirror:</b> in Civics and Economics, 80% of CBSE long answers are lifted straight from NCERT back exercises; if a paragraph reads like a direct answer, it will be copy-pasted into your paper.</li>
+        <li>These four hacks are not tricks — they are your <b>permanent glasses</b> for decoding NCERT.</li>
+        <li>Now, wearing those glasses, live testing begins.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>E. History <span class="ts">≈ 4:06 – 6:14</span></summary>
+      <ol start="35">
+        <li>One simple rule of History: every chapter is a <b>chain of events</b>.</li>
+        <li>Catch the chronology and timeline, and answers frame themselves.</li>
+        <li>Do not make the mistake of treating History as just an ocean of dates.</li>
+        <li>All four books come for 20–20 marks; there is no blueprint for chapter-wise marks.</li>
+        <li>Based on the previous pattern: <b>Ch 1 Rise of Nationalism in Europe — 5 to 7 marks; History's “Bahubali” chapter; major long answers.</b></li>
+        <li>The unification trio — Germany, Italy, Britain — is the most important part.</li>
+        <li>German unification: Bismarck's role; three wars fought over seven years.</li>
+        <li>Italian unification: Cavour, Garibaldi, Victor Emmanuel and Giuseppe Mazzini's roles.</li>
+        <li>One question on unification is certain — “you'll come back to the comment section after the exam”; these come in continuous rotation.</li>
+        <li><b>Ch 2 Nationalism in India:</b> 2 marks are certain from map work.</li>
+        <li>This chapter is the backbone of your paper.</li>
+        <li>Case-based / 5-mark: impact of the First World War on the national movement.</li>
+        <li>Question on the Jallianwala Bagh incident.</li>
+        <li>Civil Disobedience Movement and Non-Cooperation Movement — questions on the participants of both.</li>
+        <li>Guaranteed 2-mark map work: Congress sessions — Calcutta (Sept 1920), Nagpur (1920), Madras (1927).</li>
+        <li>Important centres of the movement: Champaran, Kheda, Ahmedabad, Jallianwala Bagh, Amritsar, Dandi. “It is certain — this will come.”</li>
+        <li><b>Ch 3 Making of a Global World:</b> Silk Route is very important; questions always made on it; also how diseases played an important role in the conquest of America; small chapter — read it whole.</li>
+        <li><b>Ch 4 Print Culture:</b> 3–4 marks; case-based + MCQs for sure; lots of books, authors and names; “impact of print in Europe” → theory on technological innovations; case-based and objective are certain.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>F. Civics <span class="ts">≈ 6:14 – 8:34</span></summary>
+      <ol start="53">
+        <li>In the whole of SST, the easiest and most guaranteed marks are in Civics — direct, direct questions.</li>
+        <li>The book comes for the full 20 marks; 2 to 5 marks per chapter seen as per previous pattern.</li>
+        <li><b>Power Sharing:</b> CBSE's most favourite topic is the Belgium vs Sri Lanka case study → write their ethnic composition.</li>
+        <li>Short define-type 1/2-markers: majoritarianism, community government.</li>
+        <li>Lately MCQs are being made from “Why power sharing is desirable?”</li>
+        <li>“Different forms of power sharing” → among different organs of government, among different levels of government — very important for theory.</li>
+        <li><b>Federalism:</b> 2–3 marks, sometimes 5; unitary vs federal (3M comparison); features of federalism (direct 5M); coming together vs holding together (comparison); Union/State/Concurrent List topics → MCQs for sure; the 1992 constitutional amendment that strengthened decentralisation → direct 3M/5M.</li>
+        <li>“So it is sorted — questions come from here and here in this chapter.”</li>
+        <li><b>Gender, Religion and Caste:</b> secularism → MCQ and theory both; oppression of women → 5-mark question definitely comes.</li>
+        <li><b>Political Parties:</b> multi-party system + comparison with single-party and two-party systems; functions of political parties → direct 5M; national vs regional parties → differentiate; challenges to political parties → potential question, can be asked challenge-wise and directly in 3M/5M.</li>
+        <li><b>Outcomes of Democracy:</b> usually no big theory question; but in most cases “How is democracy better than other forms of government?” comes — directly in 5 marks; NCERT back exercises finish more than half the work.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>G. Geography <span class="ts">≈ 8:34 – 11:56</span></summary>
+      <ol start="64">
+        <li>The biggest mistake in Geography: people think it is all facts. You are wrong — remember facts <b>with logic</b>.</li>
+        <li>Apply the “why here?” logic — e.g. cotton in the Maharashtra–Gujarat region because black soil is there (taught in the one-shots).</li>
+        <li><b>Resources and Development:</b> sustainable development definition, resource planning, three-step resource planning, the starting part, Agenda 21 (theory); land degradation — which state, which cause → MCQ.</li>
+        <li><b>Forest and Wildlife:</b> no map work from this chapter; only three buckets in the chapter.</li>
+        <li>Government's steps: Wildlife (Protection) Act important; Project Tiger important; MCQ on which tiger reserve is where.</li>
+        <li>Community's steps: those five points — Sariska Tiger Reserve (Alwar district of Rajasthan), Chipko movement, Beej Bachao Andolan, Joint Forest Management → directly one 5-mark question.</li>
+        <li><b>Water Resources:</b> straightforward chapter, also in three parts; causes of water scarcity and their solutions (theory); dams and rainwater harvesting; positives and negatives of dams — important; ancient hydrological structures → 3M or 5M.</li>
+        <li><b>Agriculture:</b> primitive subsistence, intensive subsistence and commercial farming → compare-between; Rabi, Kharif, Zaid → objective, “identify the type of cropping season” with four points given; crops → mainly objective (use the chart); <b>Technological and Institutional Reforms → 3M/5M in theory — do not miss.</b></li>
+        <li><b>Minerals and Energy Resources:</b> mode of occurrence of minerals → direct theory topic, must remember; after that it is all minerals → objective only, no big theory question; in between, why conservation of minerals is important → value-based questions.</li>
+        <li><b>Manufacturing Industries:</b> the last chapter for theory, because the next chapter has only map work; opening topic gives four points → Importance of Manufacturing (theory); individual industries → mostly objective, not subjective; last segment — damage to the environment → theory questions.</li>
+        <li>It is true that Geography has a lot of facts.</li>
+        <li><b>Lifelines of National Economy (Ch 7):</b> only map work; no theory; already covered in the map-work video.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>H. Economics <span class="ts">≈ 11:56 – 14:36</span></summary>
+      <ol start="76">
+        <li>Even saying four chapters come from this book is wrong — Globalisation has only one topic coming from it.</li>
+        <li><b>Development:</b> different people, different developmental goals → important, theory question definitely comes; how to compare different countries — average income; World Bank's criteria / World Development Report; Human Development Report by UNDP — education, health and income all three important → theory question; plus one objective from the charts area where you analyse data.</li>
+        <li><b>Sectors of the Indian Economy:</b> a good chapter — higher probability of theory questions from Ch 2 and Ch 3.</li>
+        <li>Comparison among the three sectors, or “explain with examples how they are interdependent”.</li>
+        <li>Why did the tertiary sector rise in our country?</li>
+        <li>Underemployment, GDP → short-type questions.</li>
+        <li>How to create more employment — because more people are employed in the primary sector → question definitely made.</li>
+        <li>Organised vs unorganised → case-based question and differentiate.</li>
+        <li>Public sector vs private sector → compare-between type.</li>
+        <li>Why is the public sector still important today? → important theory question, seen sometimes.</li>
+        <li><b>Money and Credit:</b> many theory parts; formal vs informal sector comparison important; loan activities of banks → important theory question; barter exchange and double coincidence of wants → small define-type questions; two topics that always come in theory — <b>Self Help Groups (what, why, importance)</b> and <b>why cheap and affordable credit should be given</b>.</li>
+        <li><b>Globalisation:</b> a very small chapter; definition of globalisation; the two enabling factors — technology and liberalisation — individual questions or “factors that have enabled globalisation”; possibility is low.</li>
+        <li>“After telling you all this, I think you now know what all you have to study before you go.”</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>I. The S.P.E. cheat code &amp; closing <span class="ts">≈ 14:36 – 15:42</span></summary>
+      <ol start="89">
+        <li>But suppose in the exam room your mind goes blank — even after knowing.</li>
+        <li>Then the biggest weapon comes in handy: <b>the S.P.E. cheat code</b>.</li>
+        <li>It is for those days when you are sitting in the exam hall with a big 5-mark question in front of you — e.g. “Explain the impact of print culture” or “Impact of globalisation”.</li>
+        <li>Your mind goes completely blank; you cannot remember what to write.</li>
+        <li>At that time S.P.E. helps: <b>Social, Political and Economic</b>.</li>
+        <li>Point 1 — <b>Socially</b>, what difference did it make? How did people's thinking change?</li>
+        <li>Point 2 — <b>Politically</b>, what happened? The political impact of what is asked.</li>
+        <li>Point 3 — <b>Economically</b>, what impact — on money, on trade, on jobs?</li>
+        <li>You will see that without knowing anything, you have written a structured answer — good enough for 5 marks if you build 5 points.</li>
+        <li><b>But there is no substitute for hard work.</b></li>
+        <li>Now that you know the important topics — <b>study them and practise them</b>.</li>
+        <li>This video is a guideline, a torch, to reduce the burden of those <b>400 pages</b> and push yourself to <b>95%</b>.</li>
+        <li><b>Do not panic at all</b> — “until we crack these exams together, we won't leave them.”</li>
+        <li>That's all for today; see you in the next video.</li>
+        <li>Do tell in the comments which topics you want videos on next.</li>
+        <li>Signing off with this: <b>“Together we can, we will.”</b> Thank you, thank you very much.</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- ================= 18 SOURCE ================= -->
+  <section id="source">
+    <h2><span class="num">18</span> Source &amp; method</h2>
+    <div class="card">
+      <ul>
+        <li><b>Analysed file:</b> <i>Class 10 SST High Weightage Chapters &amp; Topics From NCERT_480p.mp4</i> (61.4 MB, 854×480, 15 min 41 s) from your Dropbox → <code>/Videos/</code>. The file was pulled into the workspace and its audio/video streams inspected directly.</li>
+        <li><b>Speech source:</b> the same lecture is published publicly as <b>“Class 10 SST: High Weightage Chapters &amp; Topics From NCERT”</b> by <b>Digraj Singh Rajput</b> (uploaded 2026-09-20, length 15:42 — matching the file's 15:41.85 exactly). The notes above are built from that lecture's complete auto-generated Hindi transcript, organised chapter-wise.</li>
+        <li><b>Language:</b> the teacher speaks in Hinglish. The notes are in English with the NCERT terms kept as they are.</li>
+        <li><b>Proper nouns were corrected</b> where auto-captions garbled them (e.g. Bismarck, Cavour, Garibaldi, Victor Emmanuel, Mazzini, Kheda, Champaran, Dandi, Zaid, Beej Bachao Andolan, Sariska, Joint Forest Management).</li>
+        <li><b>Timestamps marked “≈”</b> are estimated from the position of each point in the speech, because no time-coded transcript was published for the video.</li>
+        <li><b>Marks figures are the teacher's own estimates based on the previous CBSE pattern</b> — he states clearly that no official chapter-wise blueprint exists.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Built from the lecture “Class 10 SST: High Weightage Chapters &amp; Topics From NCERT” · Notes + study plan for CBSE Class 10 Social Science (History · Civics · Geography · Economics).
+  </footer>
+
+  </main>
+</div>
+
+<script>
+(function(){
+  // ---- progress bar ----
+  var bar = document.getElementById('progress');
+  function onScroll(){
+    var h = document.documentElement;
+    var pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    bar.style.width = (pct || 0) + '%';
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+
+  // ---- checklist persistence ----
+  var KEY = 'sst10-notes-checklist-v1';
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('#chk input[type=checkbox]'));
+  function paint(b){ b.parentElement.classList.toggle('done', b.checked); }
+  function save(){
+    var state = {};
+    boxes.forEach(function(b){ state[b.id] = b.checked; });
+    try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+  }
+  try{
+    var saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+    boxes.forEach(function(b){ if(saved[b.id]) b.checked = true; });
+  }catch(e){}
+  boxes.forEach(function(b){
+    paint(b);
+    b.addEventListener('change', function(){ paint(b); save(); });
+  });
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    boxes.forEach(function(b){ b.checked = false; paint(b); });
+    try{ localStorage.removeItem(KEY); }catch(e){}
+  });
+  document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+
+  // ---- search filter ----
+  var q = document.getElementById('q');
+  var items = Array.prototype.slice.call(document.querySelectorAll('main .ch, main .hack, main .card, main details'));
+  q.addEventListener('input', function(){
+    var term = q.value.trim().toLowerCase();
+    items.forEach(function(el){
+      if(!term){ el.style.display = ''; return; }
+      var txt = el.textContent.toLowerCase();
+      el.style.display = txt.indexOf(term) > -1 ? '' : 'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>

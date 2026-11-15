@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Class 10 SST — Chapter-wise Notes (All Chapters)</title>
+<style>
+  :root{
+    --bg:#10131f;--bg2:#161b2f;--card:#1a2038;--card2:#212948;--ink:#eef1fb;--muted:#a6aecd;
+    --line:#2d3459;--accent:#ffb703;--accent2:#4cc9f0;
+    --hist:#ff7b54;--civic:#4cc9f0;--geo:#57cc99;--eco:#c77dff;
+    --good:#57cc99;--warn:#ffb703;--hot:#ff5d73;--radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:92px}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Noto Sans",Helvetica,Arial,sans-serif;
+    line-height:1.62;font-size:16px}
+  a{color:var(--accent2)}
+  header.top{position:sticky;top:0;z-index:50;background:rgba(16,19,31,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .top-inner{max-width:1280px;margin:0 auto;padding:10px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .brand{font-weight:800;font-size:15px;white-space:nowrap}.brand span{color:var(--accent)}
+  .search{flex:1 1 200px;min-width:170px;background:var(--bg2);border:1px solid var(--line);color:var(--ink);
+    padding:8px 12px;border-radius:999px;font-size:14px;outline:none}
+  .search:focus{border-color:var(--accent2)}
+  .pillbtn{background:var(--card2);border:1px solid var(--line);color:var(--muted);padding:7px 13px;
+    border-radius:999px;font-size:13px;cursor:pointer;white-space:nowrap}
+  .pillbtn:hover{color:var(--ink);border-color:var(--accent2)}
+  .pillbtn.on{background:var(--accent);color:#231a00;border-color:var(--accent);font-weight:700}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 18px 80px;display:flex;gap:26px;align-items:flex-start}
+  nav.toc{position:sticky;top:76px;flex:0 0 258px;max-height:calc(100vh - 100px);overflow:auto;
+    background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
+  nav.toc h4{margin:2px 0 8px;font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+  nav.toc h4.bk{margin-top:14px;color:var(--accent)}
+  nav.toc a{display:block;padding:5px 9px;border-radius:8px;color:var(--muted);font-size:13px;line-height:1.35}
+  nav.toc a:hover{background:var(--card);color:var(--ink);text-decoration:none}
+  main{flex:1 1 auto;min-width:0}
+  .hero{background:linear-gradient(135deg,#1d2547,#2a1f4d 55%,#3a1f3d);border:1px solid var(--line);
+    border-radius:20px;padding:26px;margin:22px 0 24px}
+  .hero h1{margin:0 0 6px;font-size:clamp(21px,3.2vw,32px);line-height:1.22}
+  .hero p.lead{margin:0 0 14px;color:#d9ddf2;max-width:74ch}
+  .meta{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#e7eaff;font-size:12.5px;padding:5px 11px;border-radius:999px}
+  .chip b{color:var(--accent)}
+  section.book{margin:0 0 40px;scroll-margin-top:90px}
+  section.book>h2{font-size:clamp(19px,2.4vw,24px);margin:34px 0 6px;padding-bottom:9px;border-bottom:2px solid var(--line);
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+  .sub{color:var(--muted);font-size:14px;margin:2px 0 16px}
+  .ch{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin:18px 0;overflow:hidden}
+  .ch-head{padding:13px 18px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .ch-no{font-size:12px;font-weight:800;letter-spacing:1px;color:var(--muted)}
+  .ch-name{font-weight:700;font-size:17px;color:#fff}
+  .ch-marks{font-size:13px;font-weight:700;color:var(--accent);margin-left:auto}
+  .ch-body{padding:14px 18px 18px}
+  .hist .ch-head{background:linear-gradient(90deg,rgba(255,123,84,.20),transparent)}
+  .civic .ch-head{background:linear-gradient(90deg,rgba(76,201,240,.20),transparent)}
+  .geo .ch-head{background:linear-gradient(90deg,rgba(87,204,153,.20),transparent)}
+  .eco .ch-head{background:linear-gradient(90deg,rgba(199,125,255,.20),transparent)}
+  .badge{display:inline-block;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;margin:0 4px 4px 0}
+  .b5{background:rgba(255,93,115,.16);color:#ff8f9f;border:1px solid rgba(255,93,115,.4)}
+  .b3{background:rgba(255,183,3,.16);color:#ffca4d;border:1px solid rgba(255,183,3,.4)}
+  .b1{background:rgba(76,201,240,.16);color:#7bdcf5;border:1px solid rgba(76,201,240,.4)}
+  .bmap{background:rgba(87,204,153,.16);color:#7ee2b8;border:1px solid rgba(87,204,153,.4)}
+  .bcase{background:rgba(199,125,255,.16);color:#dcaaff;border:1px solid rgba(199,125,255,.4)}
+  .bhot{background:rgba(255,93,115,.28);color:#ffd0d6;border:1px solid rgba(255,93,115,.6)}
+  .verdict{background:var(--bg2);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;
+    padding:11px 15px;margin:10px 0 14px;font-size:14.5px;color:#e4e8fa}
+  .verdict b{color:var(--accent)}
+  h4.blk{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin:16px 0 6px}
+  ul,ol{margin:6px 0 6px;padding-left:22px}
+  li{margin:5px 0}
+  ul.tick{list-style:none;padding-left:0}
+  ul.tick li{position:relative;padding-left:24px}
+  ul.tick li::before{content:"\25B8";position:absolute;left:6px;color:var(--accent)}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0}
+  th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+  th{background:var(--card2);font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+  tbody tr:nth-child(even){background:rgba(255,255,255,.025)}
+  details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:10px 15px;margin:12px 0}
+  summary{cursor:pointer;font-weight:700;color:#fff;font-size:14.5px}
+  details[open] summary{margin-bottom:8px}
+  .hotbox{background:rgba(255,93,115,.10);border:1px dashed rgba(255,93,115,.45);border-radius:12px;
+    padding:11px 15px;color:#ffdbe0;font-size:14.5px;margin:12px 0}
+  .notebox{background:rgba(76,201,240,.09);border:1px dashed rgba(76,201,240,.4);border-radius:12px;
+    padding:11px 15px;color:#d7e6f7;font-size:14.5px;margin:12px 0}
+  .warnbox{background:rgba(255,183,3,.09);border:1px dashed rgba(255,183,3,.45);border-radius:12px;
+    padding:11px 15px;color:#f6e6c0;font-size:14.5px;margin:12px 0}
+  footer{border-top:1px solid var(--line);margin-top:44px;padding:20px 0 8px;color:var(--muted);font-size:13.5px}
+  .progress{position:fixed;left:0;top:0;height:3px;background:var(--accent);width:0;z-index:99}
+  @media(max-width:900px){nav.toc{display:none}.ch-marks{margin-left:0}}
+  @media print{
+    body{background:#fff;color:#111}
+    header.top,nav.toc,.progress{display:none}
+    .ch,.hero,details,.verdict,.notebox,.warnbox,.hotbox,table th,table td{border-color:#bbb}
+    .ch,.hero,details,.verdict,.notebox,.warnbox,.hotbox{background:#f7f7fb !important;color:#111 !important}
+    th{background:#e8eaf5 !important;color:#111 !important}
+    .ch-name,.ch-no,h4.blk,summary{color:#111 !important}
+    .sub,.muted,p,li{color:#222 !important}
+    .wrap{display:block;max-width:none}
+    .ch{page-break-inside:avoid}
+    details{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">📗 Class&nbsp;10 <span>SST</span> · Chapter-wise Notes</div>
+    <input class="search" id="q" type="search" placeholder="Search a chapter or topic (e.g. Bismarck, SHG, rinderpest)…" />
+    <button class="pillbtn on" data-f="all">All</button>
+    <button class="pillbtn" data-f="hist">History</button>
+    <button class="pillbtn" data-f="civic">Civics</button>
+    <button class="pillbtn" data-f="geo">Geography</button>
+    <button class="pillbtn" data-f="eco">Economics</button>
+    <button class="pillbtn" id="printBtn">🖨️ Print / PDF</button>
+    <button class="pillbtn" id="openBtn">📂 Open all</button>
+    <button class="pillbtn" id="closeBtn">🔽 Close all</button>
+  </div>
+</header>
+
+<div class="wrap">
+<nav class="toc">
+  <h4>Chapters</h4>
+  <h4 class="bk">1 · History (20 marks)</h4>
+  <a href="#h1">Ch 1 — Rise of Nationalism in Europe</a>
+  <a href="#h2">Ch 2 — Nationalism in India</a>
+  <a href="#h3">Ch 3 — Making of a Global World</a>
+  <a href="#h4">Ch 4 — Print Culture &amp; the Modern World</a>
+  <h4 class="bk">2 · Civics (20 marks)</h4>
+  <a href="#c1">Ch 1 — Power Sharing</a>
+  <a href="#c2">Ch 2 — Federalism</a>
+  <a href="#c3">Ch 3 — Gender, Religion &amp; Caste</a>
+  <a href="#c4">Ch 4 — Political Parties</a>
+  <a href="#c5">Ch 5 — Outcomes of Democracy</a>
+  <h4 class="bk">3 · Geography (20 marks)</h4>
+  <a href="#g1">Ch 1 — Resources &amp; Development</a>
+  <a href="#g2">Ch 2 — Forest &amp; Wildlife</a>
+  <a href="#g3">Ch 3 — Water Resources</a>
+  <a href="#g4">Ch 4 — Agriculture</a>
+  <a href="#g5">Ch 5 — Minerals &amp; Energy</a>
+  <a href="#g6">Ch 6 — Manufacturing Industries</a>
+  <a href="#g7">Ch 7 — Lifelines of National Economy</a>
+  <h4 class="bk">4 · Economics (20 marks)</h4>
+  <a href="#e1">Ch 1 — Development</a>
+  <a href="#e2">Ch 2 — Sectors of the Indian Economy</a>
+  <a href="#e3">Ch 3 — Money &amp; Credit</a>
+  <a href="#e4">Ch 4 — Globalisation</a>
+  <a href="#e5">Ch 5 — Consumer Rights <small>(check syllabus)</small></a>
+</nav>
+
+<main>
+
+<div class="hero">
+  <h1>Class 10 SST — Chapter-wise Notes (All Chapters)</h1>
+  <p class="lead">One section per chapter, in the order the teacher covers them. Each chapter carries: <b>his verdict and expected marks</b>, the <b>exact topics he tells you to study</b>, the <b>probable questions with marks</b>, and <b>ready-to-write answer points</b> for those topics. Read this with your NCERT open — the answer points are the notes; the rest tells you where to spend your time.</p>
+  <div class="meta">
+    <span class="chip">📚 <b>20 chapters</b> · 4 books</span>
+    <span class="chip">🎯 Ordered by <b>teacher's priority</b></span>
+    <span class="chip">✍️ <b>Ready-to-write</b> answer points</span>
+    <span class="chip">🗺️ <b>Map + MCQ</b> drills inside</span>
+  </div>
+</div>
+
+<div class="notebox">
+  <b>How to read each chapter:</b> start with the <b>Teacher's verdict</b> (how much the chapter is worth and how sure he is), then go to <b>Study these</b>. Open the <b>Answer points</b> boxes and write them out once in your own words — that single pass is what the 28-day plan counts as "done". Everything under <b>Light touch</b> is explicitly low-yield — don't burn an evening on it.
+</div>
+<!-- ============================ HISTORY ============================ -->
+<section class="book" id="history">
+  <h2><span class="dot" style="background:var(--hist)"></span> Book 1 — History <small style="color:var(--muted);font-weight:400">(India &amp; the Contemporary World II · 20 marks)</small></h2>
+  <p class="sub">Teacher's rule: <b>every chapter is a chain of events</b> — catch the chronology and timeline and answers frame themselves. Don't treat History as an ocean of dates.</p>
+
+  <!-- H1 -->
+  <div class="ch hist" id="h1" data-book="hist">
+    <div class="ch-head">
+      <span class="ch-no">CH 1</span><span class="ch-name">The Rise of Nationalism in Europe</span>
+      <span class="ch-marks">5–7 marks</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge bhot">“Bahubali” chapter</span>
+      <div class="verdict"><b>Verdict:</b> “History's Bahubali (blockbuster) chapter — major long-answer questions come from it.” 5 to 7 marks. <b>One question on unification is certain:</b> “It will come in the exam — you'll come back to the comment section and say so. These come in continuous rotation.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>The <b>unification trio — Germany, Italy, Britain</b> is the most important part of the chapter.</li>
+        <li><b>German unification — Bismarck's role</b>; three wars fought over seven years.</li>
+        <li><b>Italian unification — the roles of Cavour, Garibaldi, Victor Emmanuel and Mazzini.</b></li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the role of <b>Otto von Bismarck</b> in the unification of Germany.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Describe the process of <b>unification of Italy</b> (Mazzini, Cavour, Garibaldi, Victor Emmanuel II).</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the process of <b>unification of Britain</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How did the <b>French Revolution</b> create a sense of collective identity among the French people?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain what the allegories <b>Marianne</b> and <b>Germania</b> stood for.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Why did nationalist tensions emerge in the <b>Balkans</b>?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Unification of Germany (5M)</summary>
+        <ol>
+          <li>In 1848 the middle classes of the German states tried to unite Germany through the <b>Frankfurt Parliament</b> (St. Paul's Church, 18 May 1848) — it was dominated by the middle classes and failed when the Prussian king <b>Frederick Wilhelm IV</b> rejected the crown offered to him.</li>
+          <li>Germany was then unified by <b>Prussia</b> under its Chief Minister <b>Otto von Bismarck</b> (1862), who carried out the process with the help of the Prussian army and bureaucracy.</li>
+          <li>Bismarck fought <b>three wars over seven years</b> — with <b>Denmark (1864)</b>, <b>Austria (1866)</b> and <b>France (1870–71)</b> — and Prussia won all three.</li>
+          <li>In <b>January 1871</b>, the Prussian king <b>William I</b> was proclaimed the <b>German Emperor</b> in the Hall of Mirrors at the Palace of <b>Versailles</b>.</li>
+          <li>The new German empire gave primacy to Prussian measures and practices — the Prussian currency, banking system, army and bureaucracy dominated, and the Junker class retained political power.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Unification of Italy (5M)</summary>
+        <ol>
+          <li>Italy was politically fragmented into seven states, of which only <b>Sardinia-Piedmont</b> was ruled by an Italian princely house; the north was under Austrian Habsburgs, the centre under the Pope, and the south under the Bourbon kings of Spain.</li>
+          <li><b>Giuseppe Mazzini</b> (Genoa, 1831) formed the secret society <b>Young Italy</b> to make Italy a unitary republic; his uprisings of 1831 and 1848 failed, and the leadership then moved to the ruling class.</li>
+          <li><b>Count Camillo di Cavour</b>, Chief Minister of Sardinia-Piedmont from 1852, unified Italy through diplomacy and war — a tactical alliance with France (Napoleon III) helped defeat <b>Austria in 1859</b>.</li>
+          <li><b>Giuseppe Garibaldi</b> led the volunteer <b>Red Shirts</b> and in 1860 marched into <b>South Italy and the Kingdom of the Two Sicilies</b>, where he drove out the Spanish rulers with the support of the local peasants who revolted against the landlords.</li>
+          <li>In <b>1861 Victor Emmanuel II</b> was proclaimed <b>King of united Italy</b> (Rome joined in 1870); the democratic republic that Mazzini had wanted was never created — the peasants and the poor were left out.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Unification of Britain (3M)</summary>
+        <ol>
+          <li>Britain was not formed by a sudden revolution but through a <b>long-drawn-out process</b>; before the eighteenth century the primary identities of the people were ethnic — English, Welsh, Scot or Irish.</li>
+          <li>The <b>Act of Union (1707)</b> between England and Scotland formed the United Kingdom of Great Britain; the British parliament was henceforth dominated by England.</li>
+          <li>The English nation was forged through <b>common symbols and institutions</b> — the Union Jack, the national anthem, the Reformation, and the exclusion of Catholics from Parliament in 1701 — while the Welsh, Scots and Irish were suppressed and subjected to the dominion of the English.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — French Revolution &amp; collective identity (3–5M)</summary>
+        <ol>
+          <li>The revolution of <b>1789</b> transferred sovereignty from the monarchy to a body of <b>French citizens</b> — the Estates General became the <b>National Assembly</b>.</li>
+          <li>A <b>centralised administrative system</b> made uniform laws and a uniform system of weights and measures; internal customs duties and dues were abolished.</li>
+          <li><b>New national symbols</b> were adopted — the tricolour flag, a new hymn (the Marseillaise), a new form of oath, and a centralised administration — and French replaced the regional dialects as the national language.</li>
+          <li>The ideas of <i>la Patrie</i> (the fatherland) and <i>le Citoyen</i> (the citizen) were popularised through <b>print, pamphlets and newspapers</b>, the Jacobin clubs, and education.</li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>MCQ / 1M drill:</b> Frankfurt Parliament 1848 (St. Paul's Church, rejected by Frederick Wilhelm IV) · <b>Germania</b> = a crown of oak leaves, the German oak standing for heroism · <b>Marianne</b> = the female allegory of France, the red cap of liberty, the cockade, the tricolour · the Balkan states and the disintegration of the <b>Ottoman Empire</b> · the Grimm brothers and German folk tales · Johann Gottfried Herder on folk culture.</div>
+    </div>
+  </div>
+
+  <!-- H2 -->
+  <div class="ch hist" id="h2" data-book="hist">
+    <div class="ch-head">
+      <span class="ch-no">CH 2</span><span class="ch-name">Nationalism in India</span>
+      <span class="ch-marks">2M map (certain) + case-based / 5M</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge bcase">Case-based</span><span class="badge bmap">Map 2M</span><span class="badge bhot">Backbone of the paper</span>
+      <div class="verdict"><b>Verdict:</b> “<b>Two marks are certain from map work</b> in this chapter — so those two marks simply have to be done. <b>This chapter is the backbone of your paper.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>Case-based / 5-mark: <b>impact of the First World War on the national movement</b>.</li>
+        <li><b>Jallianwala Bagh incident</b>.</li>
+        <li><b>Civil Disobedience Movement and Non-Cooperation Movement</b> — questions come on the <b>participants of both movements</b>.</li>
+        <li><b>Map work (2 marks guaranteed):</b> Congress sessions — Calcutta (Sept 1920), Nagpur (1920), Madras (1927); important centres — Champaran, Kheda, Ahmedabad, Jallianwala Bagh (Amritsar), Dandi. <b>“It is certain — this will come.”</b></li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>impact of the First World War</b> on the Indian national movement.</td><td><span class="badge b5">5M</span><span class="badge bcase">Case</span></td></tr>
+          <tr><td>Describe the <b>Jallianwala Bagh incident</b> and its impact.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Who participated in the <b>Non-Cooperation Movement</b>? Explain with reference to different social groups.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Who participated in the <b>Civil Disobedience Movement</b> and how did different social groups interpret it?</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Describe the <b>Salt March</b> and why salt was chosen as the symbol.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How did a sense of <b>collective belonging</b> develop during the freedom struggle? (folk tales, Bharat Mata, icons, songs, reclamation of history)</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>Khilafat movement</b> and the Non-Cooperation Movement.</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Impact of the First World War (5M)</summary>
+        <ol>
+          <li>The war created a <b>new economic and political situation</b>: the defence expenditure of the government was financed by war loans and by <b>raising custom duties and introducing income tax</b>.</li>
+          <li><b>Forced recruitment</b> in the rural areas for the British Indian Army caused widespread resentment; crop failure in 1918–19 led to acute shortages of food.</li>
+          <li>An <b>influenza epidemic</b> ravaged the country, and prices roughly <b>doubled between 1913 and 1918</b> — the poor, the soldiers, and the small zamindars and landlords suffered the most.</li>
+          <li>The government passed the <b>Defence of India Act</b> and then the <b>Rowlatt Act (1919)</b>, allowing detention without trial; Gandhiji called for a <b>hartal on 6 April 1919</b> (the Rowlatt Satyagraha).</li>
+          <li>The atmosphere of repression culminated in the <b>Jallianwala Bagh massacre</b>, and the nationalist movement turned from a limited one into a mass movement.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Jallianwala Bagh (3–5M)</summary>
+        <ol>
+          <li>On <b>13 April 1919</b>, a crowd of peasants, workers and city-dwellers gathered in the enclosed ground of <b>Jallianwala Bagh</b> in <b>Amritsar, Punjab</b> — a bagh with a narrow entrance, high walls and only one exit — to protest against the arrest of Dr Saifuddin Kitchlew and Dr Satyapal and to celebrate <b>Baisakhi</b>.</li>
+          <li>Although the announcement relaxing the ban on public meetings (from 10 pm to 10.30 pm) never reached the people, <b>General Dyer</b> entered with armed troops, blocked the only exit and <b>ordered his men to fire</b> without warning.</li>
+          <li>Hundreds were killed and thousands wounded; people jumped into a well in the compound to escape the bullets.</li>
+          <li>The nation was shocked: <b>Rabindranath Tagore renounced his knighthood</b>, and Gandhiji returned the Kaisar-i-Hind and other honours he had received.</li>
+          <li>Nationalist feelings ran very high, particularly in Punjab, and the incident became the immediate backdrop to the <b>Non-Cooperation Movement</b>.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Participants in the Non-Cooperation Movement (5M)</summary>
+        <ol>
+          <li><b>The middle classes in the cities</b>: the movement began with middle-class participation — students, teachers and lawyers; people surrendered titles and boycotted the civil services, the army, the police, the courts and the legislative councils, schools and foreign goods.</li>
+          <li><b>Peasants</b>: in <b>Awadh</b> the peasant movement led by <b>Baba Ramchandra</b> was against the talukdars and landlords — demanding reduction of revenue, abolition of begar and social boycott of oppressive landlords; the <b>Eka movement</b> demanded commutation of rent; in Punjab the Akali agitation; elsewhere the Kisan Sabhas.</li>
+          <li><b>Plantation workers in Assam</b>: under the <b>Inland Emigration Act, 1859</b> they were not permitted to leave the tea gardens without permission; for them Swaraj meant the right to move freely in and out of the tea gardens and a raise in their wages.</li>
+          <li><b>Workers</b>: the <b>All India Trade Union Congress was founded in 1920</b>; there were strikes in 1921 including the Buckingham and Carnatic Mills strike in Madras and strikes on the Assam-Bengal railways and in the Tata Iron and Steel Company.</li>
+          <li>The movement was called off in <b>February 1922</b> after the <b>Chauri Chaura</b> incident in Gorakhpur, where a peaceful demonstration turned violent and 22 policemen were burnt alive.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Civil Disobedience Movement: who participated (5M)</summary>
+        <ol>
+          <li><b>Rich peasants</b> — the <b>Patidars of Gujarat</b> and the <b>Jats of Uttar Pradesh</b> — were active; they resented the high revenue demand and the colonial government's refusal to reduce it when prices collapsed.</li>
+          <li><b>Poor peasants</b> were interested in the movement but wanted the unpaid rent owed to the landlords to be remitted; they were kept out of the movement by their landlords, most of whom were Congressmen.</li>
+          <li><b>Business classes and industrialists</b> reacted against colonial policies that restricted business; they formed the <b>FICCI in 1927</b> and attacked colonial control over the Indian economy.</li>
+          <li><b>The industrial working class</b> participated in limited numbers — the Nagpur workers took part in the Salt Satyagraha, Sholapur mill workers observed a hartal in 1930, and the Chotanagpur tinplate workers went on strike.</li>
+          <li><b>Women</b> participated in large numbers in the salt satyagraha and in picketing foreign cloth and liquor shops; <b>Muslim participation was limited</b> — after the decline of the Non-Cooperation-Khilafat movement a large section felt alienated, and the Congress, fearing to offend the orthodox Hindus, could not fully support the Khilafat cause.</li>
+        </ol>
+      </details>
+
+      <div class="hotbox">
+        <b>🗺️ MAP WORK — 2 marks, guaranteed. Memorise these 8 items:</b>
+        <table style="margin-top:8px">
+          <thead><tr><th style="width:34%">Category</th><th>Places</th></tr></thead>
+          <tbody>
+            <tr><td>Congress sessions</td><td><b>Calcutta (Sept 1920)</b> · <b>Nagpur (Dec 1920)</b> · <b>Madras (1927)</b></td></tr>
+            <tr><td>Centres of the movement</td><td><b>Champaran</b> (Bihar — Indigo planters' movement) · <b>Kheda</b> (Gujarat — Peasant Satyagraha) · <b>Ahmedabad</b> (Gujarat — Cotton mill workers) · <b>Jallianwala Bagh, Amritsar</b> (Punjab) · <b>Dandi</b> (Gujarat — Salt March)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- H3 -->
+  <div class="ch hist" id="h3" data-book="hist">
+    <div class="ch-head">
+      <span class="ch-no">CH 3</span><span class="ch-name">The Making of a Global World</span>
+      <span class="ch-marks">Small chapter — read it whole</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “The <b>Silk Route</b> is very important in this chapter — a question on the Silk Route is always made. Along with that: <b>how diseases played an important role in the conquest of America</b>. It's a small chapter — if you want, you can read the entire chapter.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>The <b>Silk Route</b>.</li>
+        <li><b>Diseases and the conquest of America.</b></li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain what the <b>Silk Route</b> was and its importance.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How did the global transfer of <b>disease</b> in the pre-modern world help in the colonisation of the Americas?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the impact of the <b>rinderpest</b> (cattle plague) in Africa in the 1890s.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How did <b>technology</b> (railways, steamships, the telegraph) shape the 19th-century world economy?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Explain the causes and impact of the <b>Great Depression</b> of 1929, or the <b>Bretton Woods</b> system.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>What was <b>indentured labour migration</b>? Where did Indian indentured workers go?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Silk Route (3M)</summary>
+        <ol>
+          <li>The <b>Silk Routes</b> were a network of overland and maritime trade routes that linked <b>Asia with Europe and northern Africa</b>, named after the Chinese silk carried along them.</li>
+          <li>They were in use from before the Christian era and flourished for many centuries, connecting China and Central Asia with Persia, the Mediterranean ports and Rome.</li>
+          <li>The routes carried more than goods: <b>merchants, pilgrims, missionaries, soldiers and nomads</b> travelled along them, and with them travelled ideas, technologies, religions (Buddhism, Islam, Christianity) and food items — noodles and pasta travelled from China westwards.</li>
+          <li>An important spin-off was the spread of <b>disease</b>: the bubonic plague travelled westwards along the same routes and devastated Europe in the fourteenth century.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Disease and the conquest of America (3–5M)</summary>
+        <ol>
+          <li>America had been cut off from the rest of the world for millennia, so its people had <b>no immunity</b> to the diseases that were common in Europe and Africa — above all <b>smallpox</b>.</li>
+          <li>When the Spanish arrived (Cortés conquered the Aztecs in 1519; Pizarro the Incas in 1535), they carried these germs with them; <b>smallpox, measles, typhus and influenza</b> spread faster than the soldiers and killed entire communities.</li>
+          <li>The native population collapsed — in places by up to 90% — destroying the social fabric, the armies and the ability to resist; the conquest was therefore a <b>biological conquest</b> as much as a military one.</li>
+          <li>Because the European colonisers could not work in the mines and plantations, they turned to the <b>African slave trade</b> to replace the lost labour force.</li>
+          <li>Line for the examiner: the Spanish invaded “not with guns alone, but with germs”.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Rinderpest in Africa &amp; the 19th century (3M)</summary>
+        <ol>
+          <li><b>Rinderpest</b> (cattle plague) arrived in Africa in the late 1880s, carried by infected cattle imported from British Asia to feed the Italian soldiers invading Eritrea.</li>
+          <li>It killed about <b>90% of the cattle</b> in southern and eastern Africa within a few years, destroying the livelihoods of African pastoralists.</li>
+          <li>The loss of cattle forced Africans into the labour market and into European hands, so the rinderpest <b>helped the colonisers conquer and control Africa</b>.</li>
+          <li>Other 19th-century drivers: <b>railways, steamships and the telegraph</b>; the abolition of the <b>Corn Laws</b> in Britain leading to cheap grain imports; and <b>indentured labour migration</b> from India to the Caribbean, Fiji, Mauritius, South Africa and the tea gardens of Assam.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>Because this chapter is small, do a full read in one sitting</b> — as the teacher says, you can read the entire chapter. Also remember: <b>Bretton Woods (1944) → the IMF and the World Bank</b>; the post-war move from a fixed exchange-rate system to globalisation; the <b>GATT</b> and the lowering of trade barriers; and the <b>Great Depression of 1929</b>, which spread from the USA to the rest of the world through the debt and trade links.</div>
+    </div>
+  </div>
+
+  <!-- H4 -->
+  <div class="ch hist" id="h4" data-book="hist">
+    <div class="ch-head">
+      <span class="ch-no">CH 4</span><span class="ch-name">Print Culture and the Modern World</span>
+      <span class="ch-marks">3–4 marks</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge bcase">Case-based</span><span class="badge b1">MCQ</span><span class="badge b3">3M theory</span>
+      <div class="verdict"><b>Verdict:</b> “3 to 4 marks come from Print Culture — <b>case-based question and MCQs, for sure</b>, because this chapter has a lot of <b>books, authors and all their names</b>. Along with that, <b>Impact of print in Europe</b> — a theory question is made on what technological innovations took place. These segments can also make theory questions — but <b>case-based and objective are certain</b>.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>Books, authors and all their names (MCQ goldmine).</li>
+        <li><b>Impact of print in Europe</b> — the technological innovations.</li>
+      </ul>
+
+      <h4 class="blk">Books &amp; authors — MCQ list</h4>
+      <table>
+        <thead><tr><th style="width:36%">Person / Work</th><th>Fact to remember</th></tr></thead>
+        <tbody>
+          <tr><td><b>Diamond Sutra</b></td><td>The oldest printed book — printed in AD 868 in China by woodblock printing.</td></tr>
+          <tr><td><b>Marco Polo</b></td><td>Brought knowledge of woodblock printing to Italy in 1295.</td></tr>
+          <tr><td><b>Johann Gutenberg</b></td><td>The goldsmith who developed the printing press (by 1448); the first book he printed was the <b>Bible</b> — 180 copies in three years.</td></tr>
+          <tr><td><b>Martin Luther</b></td><td>His <b>Ninety Five Theses (1517)</b> were printed and widely read — a landmark of the Protestant Reformation.</td></tr>
+          <tr><td><b>Index of Prohibited Books</b></td><td>Issued by the Roman Catholic Church (1558) to control what could be printed and read.</td></tr>
+          <tr><td>Print comes to India</td><td>Missionaries set up the first printing press in <b>Goa in 1556</b>; the first Malayalam book was printed in <b>1577</b>; the first Tamil book at <b>Cochin in 1713</b>.</td></tr>
+          <tr><td><b>Raja Rammohun Roy</b></td><td>Published the Bengali weekly <b>Sammachar Darpan</b> (1818) and the Persian newspaper <b>Mirat-ul-Akbar</b> (1822).</td></tr>
+          <tr><td><b>Bal Gangadhar Tilak</b></td><td><b>Kesari</b> (Marathi, 1881) — the nationalist press.</td></tr>
+          <tr><td><b>Jyotirao Phule</b></td><td><b>Gulamgiri</b> (1871) — against caste and slavery.</td></tr>
+          <tr><td><b>Pandita Ramabai</b></td><td>Wrote on the miserable lives of upper-caste Hindu women; an early feminist writer.</td></tr>
+          <tr><td><b>E.V. Ramaswamy Naicker (Periyar)</b></td><td>Ran the newspaper <b>Kudi Arasu</b> — the self-respect movement in Tamil Nadu.</td></tr>
+          <tr><td><b>Vernacular Press Act</b></td><td>1878 — the colonial government's censorship of the Indian-language press.</td></tr>
+          <tr><td><b>Battala</b> (Calcutta)</td><td>The hub of cheap chapbooks, almanacs and popular prints.</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>impact of print in Europe</b> / describe the <b>technological innovations</b> that shaped print.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>How did print help the <b>Protestant Reformation</b> / the <b>French Revolution</b>?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How did print create a <b>new reading public</b> in Europe? (the “reading mania”)</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Why were <b>manuscripts expensive</b> before the age of print? / How did print come to India?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How did print help <b>women</b> and the <b>Dalits</b> in India?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Impact of print in Europe / technological innovations (3–5M)</summary>
+        <ol>
+          <li><b>From hand printing to mechanical printing</b>: the hand printing press gave way to the mechanical press; production multiplied many times over and the cost of each book fell sharply.</li>
+          <li><b>Woodblock and metal type</b>: China used woodblock printing (the Diamond Sutra, AD 868); Korea and Japan developed metal type; in Europe <b>Gutenberg's metal-type press (1448)</b> made mass production possible.</li>
+          <li><b>Improvements to the press itself</b>: the <b>power-driven cylindrical press</b>, the <b>steam-powered rotary press</b> and later the <b>offset press</b> allowed thousands of copies to be printed quickly and cheaply.</li>
+          <li><b>Cheap paper and better ink</b>: new paper-making machinery and later the use of wood pulp made paper affordable, so books, newspapers and periodicals came within the reach of ordinary people.</li>
+          <li><b>Distribution networks</b>: <b>railways and steamships</b> carried printed material across countries and the <b>telegraph</b> carried the news, creating a mass reading public — the “<b>reading mania</b>” — and spreading the ideas of the Reformation, the Enlightenment and the French Revolution.</li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>Because case-based is certain here,</b> practise the case-based passages of this chapter: the <b>Battala</b> chapbooks of Calcutta, <b>Menocchio</b> the Italian miller, <b>Louis Sebastien Mercier</b> on the reading mania, and the <b>Vernacular Press Act of 1878</b>.</div>
+    </div>
+  </div>
+</section>
+<!-- ============================ CIVICS ============================ -->
+<section class="book" id="civics">
+  <h2><span class="dot" style="background:var(--civic)"></span> Book 2 — Civics <small style="color:var(--muted);font-weight:400">(Democratic Politics II · 20 marks)</small></h2>
+  <p class="sub">Teacher's rule: <b>in the whole of SST, the easiest and most guaranteed marks are in Civics — because direct, direct questions are made.</b> The book is worth 20 marks; 2–5 marks per chapter has been seen.</p>
+
+  <!-- C1 -->
+  <div class="ch civic" id="c1" data-book="civic">
+    <div class="ch-head">
+      <span class="ch-no">CH 1</span><span class="ch-name">Power Sharing</span>
+      <span class="ch-marks">2–5 marks</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “CBSE's <b>most favourite topic</b> is the <b>Belgium vs Sri Lanka case study</b> — you'll have to write their ethnic composition. Short define-type things can be asked in 1–2 marks: <b>majoritarianism? community government?</b> Lately <b>MCQs are being made from ‘Why power sharing is desirable'</b>. And <b>‘Different forms of power sharing'</b> — among different organs and different levels of government — becomes very important for theory.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Belgium vs Sri Lanka</b> case study — ethnic composition.</li>
+        <li>Definitions: <b>majoritarianism</b>, <b>community government</b>.</li>
+        <li><b>Why power sharing is desirable</b> (MCQ).</li>
+        <li><b>Different forms of power sharing</b> — organs of government; levels of government.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Describe the <b>ethnic composition of Belgium and Sri Lanka</b> and the arrangement worked out in Belgium.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>majoritarian measures</b> adopted in Sri Lanka and their consequences.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Why is <b>power sharing desirable</b>? (the prudential and the moral reasons)</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>different forms of power sharing</b> in a democracy.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Define <b>majoritarianism</b> / <b>community government</b>.</td><td><span class="badge b1">1–2M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Belgium vs Sri Lanka (5M)</summary>
+        <ol>
+          <li><b>Belgium's ethnic composition</b>: 59% of the total population lives in the <b>Flemish region and speaks Dutch</b>; another 40% lives in <b>Wallonia and speaks French</b>; the remaining 1% speaks German. In the capital city <b>Brussels</b>, 80% of the people speak French while 20% are Dutch-speaking.</li>
+          <li><b>Belgium's problem</b>: the minority French-speaking community was relatively rich and powerful, and got special protection at the time of independence in 1830; this was resented by the Dutch-speaking majority, and the tension between the two communities came to a head in the 1960s.</li>
+          <li><b>Belgium's solution</b>: between 1970 and 1993 the constitution was amended four times — the number of Dutch and French-speaking ministers is <b>equal in the central government</b>; many powers of the central government were given to the <b>state governments of the two regions</b>, which are not subordinate to the central government; and <b>Brussels</b> has a separate government in which both communities have equal representation.</li>
+          <li>A third kind of government — the <b>community government</b> — is elected by the people belonging to the Dutch, French and German-speaking communities; it has the power regarding <b>cultural, educational and language-related issues</b>.</li>
+          <li><b>Sri Lanka's contrast</b>: <b>74% Sinhala-speaking</b> and <b>18% Tamil-speaking</b> (13% Sri Lankan Tamils in the north and east, and 5% Indian Tamils — the plantation workers); by religion, <b>82% Buddhist, 8% Muslim and 8% Christian</b>. After independence in 1948, majoritarian measures followed: <b>Sinhala was made the sole official language in 1956</b>, the government followed policies favouring Sinhala applicants for university positions and government jobs, and Buddhism was given the foremost place. The Tamils felt discriminated against, and the distrust led to a <b>civil war</b> — the LTTE launched a war in 1983.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Why power sharing is desirable (3–5M)</summary>
+        <ol>
+          <li><b>Prudential reason (i)</b>: power sharing helps to <b>reduce the possibility of conflict between social groups</b>; social conflict often leads to violence and political instability.</li>
+          <li><b>Prudential reason (ii)</b>: it ensures the <b>stability of the political order</b>; imposing the will of the majority community over others may look like an attractive option in the short run, but in the long run it undermines the unity of the nation.</li>
+          <li><b>Moral reason (i)</b>: power sharing is the <b>very spirit of democracy</b>; a democratic rule involves sharing power with those affected by its exercise.</li>
+          <li><b>Moral reason (ii)</b>: a legitimate government is one where citizens, through participation, acquire a stake in the system — people have a right to be consulted on how they are to be governed.</li>
+          <li><b>Conclusion line:</b> the prudent and the moral reasons cannot be separated — the prudent reason is based on a careful calculation of gains and losses, while the moral reason upholds the spirit of democracy.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Forms of power sharing (5M)</summary>
+        <ol>
+          <li><b>Horizontal distribution — among different organs of government</b>: power is shared among the <b>legislature, executive and judiciary</b>, so that no organ can exercise unlimited power; each organ can check the others — this is called a system of checks and balances.</li>
+          <li><b>Vertical division — among governments at different levels</b>: power is divided between a general government for the entire country and governments at the provincial or regional level — in India, the <b>Union government, the State governments, and the local self-government (the panchayats and the municipalities)</b>.</li>
+          <li><b>Among different social groups</b>: power may also be shared among different social groups such as the linguistic and religious groups — in Belgium by the <b>community government</b>; in India by the <b>reservations for the SCs, STs and OBCs</b> and the <b>one-third reservation for women in local government</b>.</li>
+          <li><b>Among political parties, pressure groups and movements</b>: in a democracy, the political parties contest elections and share power, and the pressure groups and movements control or influence those in power and thus share it.</li>
+          <li><b>Key idea to remember</b>: in a democracy, political expression of <b>majority rule</b> means that in every election or decision different persons and groups may and can form a majority — the majority and the minority opinions are not permanent.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>Definitions to write in one line each:</b><br>
+        · <b>Majoritarianism</b> — a belief that the majority community should be able to rule a country in whichever way it wants, disregarding the wishes and needs of the minority.<br>
+        · <b>Community government</b> — a government in Belgium elected by the people belonging to one language community (Dutch, French or German-speaking), with powers over cultural, educational and language-related issues.<br>
+        · <b>Civil war</b> — a violent conflict between opposing groups within a country.<br>
+        · <b>Prudential</b> — based on prudence, that is, on a careful calculation of gains and losses.</div>
+    </div>
+  </div>
+
+  <!-- C2 -->
+  <div class="ch civic" id="c2" data-book="civic">
+    <div class="ch-head">
+      <span class="ch-no">CH 2</span><span class="ch-name">Federalism</span>
+      <span class="ch-marks">2–3 marks (sometimes 5)</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “2 to 3 marks come from Federalism; sometimes 5-mark questions are also asked. <b>Unitary vs Federal</b> — the same comparison question can come in 3 marks. <b>Features of Federalism</b> — directly an important 5-mark part. <b>Coming together vs Holding together</b> in comparison type. The topics inside <b>Union List, State List, Concurrent List</b> definitely come as MCQs. And the <b>1992 constitutional amendment that strengthened decentralisation</b> — a direct 3/5 mark question. <b>So it's sorted — questions come from here and here.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Unitary vs Federal system</b> (3M comparison).</li>
+        <li><b>Features of Federalism</b> (5M).</li>
+        <li><b>Coming together vs Holding together</b> federations.</li>
+        <li><b>Union / State / Concurrent List</b> topics → MCQ.</li>
+        <li><b>1992 constitutional amendment</b> on decentralisation → 3/5M.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>key features of federalism</b>.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Distinguish between a <b>unitary</b> and a <b>federal</b> system of government.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>What is the difference between <b>coming together</b> and <b>holding together</b> federations?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Describe the <b>three-fold distribution of legislative powers</b> in India (the three lists).</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>How has the <b>1992 constitutional amendment</b> strengthened decentralisation in India?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>decentralisation</b>? Describe the rural and urban local government structure.</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Key features of federalism (5M)</summary>
+        <ol>
+          <li>There are <b>two or more levels (tiers) of government</b>.</li>
+          <li>Different tiers of government <b>govern the same citizens</b>, but each tier has its own <b>jurisdiction</b> in specific matters of legislation, taxation and administration.</li>
+          <li>The jurisdictions of the respective levels or tiers of government are <b>specified and guaranteed by the Constitution</b>.</li>
+          <li>The <b>fundamental provisions of the Constitution cannot be unilaterally changed</b> by one level of government — such changes require the consent of both levels of government.</li>
+          <li><b>Courts have the power to interpret the Constitution</b> and the powers of the different levels of government; the highest court acts as an umpire if any dispute arises between them.</li>
+          <li>Sources of revenue for each level are <b>clearly specified</b> to ensure financial autonomy.</li>
+          <li>The federal system thus has <b>dual objectives</b>: to safeguard and promote the unity of the country, while at the same time accommodating regional diversity.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Three Lists &amp; the 1992 amendment (3–5M)</summary>
+        <ol>
+          <li><b>Union List</b> (97 subjects) — subjects of national importance such as <b>defence, foreign affairs, banking, communications and currency</b>; only the Union government can make laws on these.</li>
+          <li><b>State List</b> (66 subjects) — subjects of State and local importance such as <b>police, trade, commerce, agriculture and irrigation</b>; normally the State governments alone can make laws on them.</li>
+          <li><b>Concurrent List</b> (47 subjects) — subjects of common interest such as <b>education, forest, trade unions, marriage, adoption and succession</b>; both the Union and the State governments can make laws, and in case of a conflict the Union law prevails.</li>
+          <li><b>Residuary subjects</b> — subjects that do not fall in any of the three lists are dealt with by the <b>Union government</b>.</li>
+          <li><b>The 1992 amendment</b>: the <b>Constitution (73rd and 74th) Amendment Acts, 1992</b> made the <b>third tier of government more powerful and effective</b> — it is now constitutionally mandatory to hold regular elections to local government bodies; seats are reserved for the SCs, STs, OBCs and <b>one-third for women</b>; a <b>State Election Commission</b> has been created; and the gram sabha and the ward committees have been given powers.</li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>MCQ drill (guaranteed):</b> which subject goes to which list — defence / foreign affairs / banking / currency → Union; police / agriculture / irrigation / trade → State; education / forests / trade unions / marriage / adoption / succession → Concurrent. Also: <b>coming together federations</b> = the USA, Switzerland, Australia; <b>holding together federations</b> = India, Spain, Belgium.</div>
+    </div>
+  </div>
+
+  <!-- C3 -->
+  <div class="ch civic" id="c3" data-book="civic">
+    <div class="ch-head">
+      <span class="ch-no">CH 3</span><span class="ch-name">Gender, Religion and Caste</span>
+      <span class="ch-marks">MCQ + theory</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “From this, <b>secularism — MCQ and theory both</b> become important. <b>How is the oppression of women happening?</b> — a 5-mark question definitely comes from this.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Secularism</b> — MCQ + theory.</li>
+        <li><b>Oppression of women / the women's movement</b> — 5M, definitely comes.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>How does the <b>gender division</b> affect politics? / Explain the <b>sexual division of labour</b>.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Describe the <b>women's (feminist) movement</b> and its achievements.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>communalism</b>? Explain its different forms in politics.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>How does the Indian state practise <b>secularism</b>?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>How is <b>caste</b> reflected in politics? / How are caste inequalities being eroded?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Women's oppression &amp; the feminist movement (5M)</summary>
+        <ol>
+          <li>Patriarchy produces a <b>sexual division of labour</b> — the household and family work is assigned to women and girls; this work is not paid for and not counted, and it is assumed to be natural and unchangeable.</li>
+          <li>Consequently women's <b>literacy and participation in paid work</b> remain lower than men's, and the proportion of <b>women in the legislatures</b> is low in India, despite the constitutional guarantee of equality.</li>
+          <li><b>First wave of feminism</b> (late 19th–early 20th century): the struggle for <b>political rights</b> — the right to vote, education and property — based on the argument that women are not by birth less capable than men.</li>
+          <li><b>Second wave</b>: a broader demand for <b>equal rights, equal wages, the right to divorce and to own property</b>, and for action on domestic violence, dowry and sexual harassment; in India the movement works largely through women's organisations, and the <b>Women's Reservation Bill</b> seeking one-third of the seats for women in the legislatures remains a live demand.</li>
+          <li><b>The gains</b>: the more women enter the public sphere, the more they influence politics — raising issues of education, health and employment, and of the burden of unpaid work they carry — and they pressure the political parties to give them a share in power.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Secularism &amp; communalism (3–5M)</summary>
+        <ol>
+          <li><b>Secularism in the Indian Constitution</b>: there is <b>no official religion</b> in India; the Indian state is neither religious nor irreligious — it is <b>non-religious</b> and is not under the control of any religious authority.</li>
+          <li>Articles 25 to 28 guarantee the <b>freedom of religion</b> to all citizens; the state does not discriminate against anyone on the basis of religion.</li>
+          <li>The Indian state can <b>intervene in religion-based matters to ensure equality</b> — for example, banning untouchability, abolishing sati, and enacting the Hindu Code Bill which reformed the inheritance rights of women in Hindu society.</li>
+          <li>But secularism in practice also requires the <b>mutual tolerance of all religions</b>; the followers of a religion cannot be denied the right to profess, practise and propagate their religion.</li>
+          <li><b>Communalism</b> takes three forms: (i) <b>communal prejudice and a communal mind-set</b> — the belief that one community's interests are opposed to another's; (ii) <b>communal riots and violence</b>; and (iii) <b>the use of religion in politics</b> — the most common form, using religious symbols, slogans, leaders and sentiments for political mobilisation.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Caste in politics (3–5M)</summary>
+        <ol>
+          <li>Caste continues to be a <b>powerful social division</b> in India, and political parties use it to win elections through <b>caste associations</b> and through the selection of candidates.</li>
+          <li>The political expression of caste inequality has taken several forms — the <b>Dalit movements</b> demanding social justice, and the formation of parties such as the <b>Bahujan Samaj Party</b> (formed in 1984 under the leadership of Kanshi Ram) representing the Dalits and the Bahujans.</li>
+          <li>But caste inequality is <b>eroding</b>: large-scale <b>urbanisation</b>, the spread of <b>literacy and education</b>, <b>occupational mobility</b>, the weakening of the position of the landlords, and the breaking down of the caste hierarchy through the democratic process have all contributed.</li>
+          <li>Yet caste has <b>not disappeared from politics</b>: political competition keeps caste identities alive, and voters continue to vote on caste lines; caste has also been used to demand reservation in education and employment.</li>
+          <li><b>Conclusion:</b> every social difference does not lead to social division — a social division becomes a political division only when some social difference <b>overlaps with other differences</b> and is perceived as such by the people.</li>
+        </ol>
+      </details>
+    </div>
+  </div>
+
+  <!-- C4 -->
+  <div class="ch civic" id="c4" data-book="civic">
+    <div class="ch-head">
+      <span class="ch-no">CH 4</span><span class="ch-name">Political Parties</span>
+      <span class="ch-marks">3M / 5M</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span>
+      <div class="verdict"><b>Verdict:</b> “<b>Multi-party system</b>, and after it the comparison — <b>single-party system, two-party system</b> — becomes an important part. <b>Functions of political parties</b> — this can again be a direct 5-mark question. <b>National and regional parties</b> come in ‘differentiate between'. And <b>Challenges to political parties</b> is a potential question — it can be asked challenge by challenge individually, and it also comes directly in 3 marks / 5 marks.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>Multi-party vs single-party vs two-party systems.</li>
+        <li><b>Functions of political parties</b> (direct 5M).</li>
+        <li>National vs regional parties (differentiate).</li>
+        <li><b>Challenges to political parties</b> (each challenge individually).</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Describe the <b>functions of a political party</b>.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Distinguish between <b>one-party, two-party and multi-party systems</b>; why has India evolved a multi-party system?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Differentiate between <b>national and regional (state) parties</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Explain the <b>challenges faced by political parties</b> in India.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Suggest <b>reforms</b> to strengthen political parties in a democracy.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Functions of political parties (5M)</summary>
+        <ol>
+          <li><b>Parties contest elections</b>: in most democracies, elections are fought mainly among the candidates put up by political parties; a party that gets a majority forms the government.</li>
+          <li><b>Parties put forward different policies and programmes</b>, and the voters choose from them — this is the basis of a meaningful choice in a democracy.</li>
+          <li><b>Parties play a decisive role in making laws</b> for the country: formally, laws are debated and passed in the legislature, but since most of the members belong to a party, they go by the direction of the party leadership.</li>
+          <li><b>Parties form and run governments</b>: they recruit leaders, train them and then make them ministers to run the government in accordance with the party's policies.</li>
+          <li><b>Those parties that lose the elections form the opposition</b> and voice different views, criticise the government for its failures and mobilise opposition to it.</li>
+          <li><b>Parties shape public opinion</b>: they raise and highlight issues, launch movements, and provide ordinary citizens access to the government machinery and to welfare schemes.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Challenges to political parties (3–5M)</summary>
+        <ol>
+          <li><b>Lack of internal democracy</b>: all over the world there is a tendency for parties to concentrate power in one or a few leaders at the top; parties do not keep membership registers, do not hold organisational meetings, and do not conduct internal elections regularly.</li>
+          <li><b>Dynastic succession</b>: the top positions are passed on to the family members of the leaders; ordinary members and workers of the party are not given an opportunity to rise, and the choice of candidates is controlled by families.</li>
+          <li><b>The growing role of money and muscle power</b>: since parties raise funds from the rich, they become dependent on them; in some cases parties support criminals and musclemen who can win elections.</li>
+          <li><b>Lack of meaningful choice</b>: parties do not seem to offer a meaningful choice to the voters; there is a lack of significant differences among them, and in recent years the <b>decline of ideological differences</b> has been visible.</li>
+          <li><b>Reforms</b>: the <b>anti-defection law (the Tenth Schedule, 1985)</b>; the filing of <b>affidavits</b> declaring property and pending criminal cases; the Election Commission's requirement that parties <b>hold organisational elections and file income tax returns</b>; <b>state funding of elections</b>; and giving <b>one-third of the tickets to women candidates</b>.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>Recognition rule (MCQ favourite):</b> a party is recognised as a <b>national party</b> if it secures at least <b>6% of the total votes</b> in the Lok Sabha or the Assembly elections in <b>four States</b> and wins at least <b>four seats</b> in the Lok Sabha. A <b>state party</b> secures at least 6% of the total votes in an Assembly election and wins at least <b>two seats</b>.</div>
+    </div>
+  </div>
+
+  <!-- C5 -->
+  <div class="ch civic" id="c5" data-book="civic">
+    <div class="ch-head">
+      <span class="ch-no">CH 5</span><span class="ch-name">Outcomes of Democracy</span>
+      <span class="ch-marks">usually one 5M</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span>
+      <div class="verdict"><b>Verdict:</b> “Usually a big theory question does not come from Outcomes of Democracy. <b>But in most cases one question comes: ‘How is democracy better than other forms of government?' — and when it comes, it comes directly in 5 marks.</b> In this, if you pay attention to the <b>NCERT back-exercise questions</b>, more than half the work is done.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>“How is democracy better than other forms of government?”</b> — 5M.</li>
+        <li>All <b>NCERT back-exercise questions</b> of this chapter.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td><b>How is democracy better than other forms of government?</b></td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>How does democracy produce an <b>accountable, responsive and legitimate</b> government?</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the record of democracy in terms of <b>economic growth and development</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How does democracy <b>accommodate social diversity</b>?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>How does democracy enhance the <b>dignity and freedom of citizens</b>?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — “How is democracy better than other forms of government?” (5M)</summary>
+        <ol>
+          <li><b>Accountable government</b>: democracy ensures that <b>decision-making is based on norms and procedures</b>, and not on the whims of any individual — the decision-makers have to explain the rationale of their decisions, which is transparency.</li>
+          <li><b>Responsive government</b>: a democratic government is elected for a <b>fixed term</b> and is <b>attentive to the needs and expectations of the citizens</b>; it has to be responsive to the needs of the people.</li>
+          <li><b>Legitimate government</b>: democracy produces a government that is <b>accountable to the citizens</b> and accepted by the people as their own — people believe that democracy is the best form of government, so it enjoys high legitimacy.</li>
+          <li><b>Reduction of inequality and accommodation of diversity</b>: democracy is based on <b>political equality</b> and is expected to reduce economic inequality and poverty; it also <b>accommodates social diversity</b> and provides the only peaceful solution to the problem of social conflict.</li>
+          <li><b>Dignity and freedom of citizens</b>: democracy <b>transforms people from subjects into citizens</b> and enhances the dignity of the individual — especially of the disadvantaged and discriminated castes — and it <b>allows us to correct our own mistakes</b> through open public debate on its failures, which no other form of government does.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>Do the back-exercise questions of this chapter first</b> — the teacher says more than half the work is done by them alone.</div>
+    </div>
+  </div>
+</section>
+<!-- ============================ GEOGRAPHY ============================ -->
+<section class="book" id="geography">
+  <h2><span class="dot" style="background:var(--geo)"></span> Book 3 — Geography <small style="color:var(--muted);font-weight:400">(Contemporary India II · 20 marks)</small></h2>
+  <p class="sub">Teacher's rule: <b>remember the facts WITH the logic — apply the “WHY HERE?” logic to every fact.</b> (Cotton grows in the Maharashtra–Gujarat belt because black soil is there.) And yes, Geography does have a lot of facts.</p>
+
+  <!-- G1 -->
+  <div class="ch geo" id="g1" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 1</span><span class="ch-name">Resources and Development</span>
+      <span class="ch-marks">theory + MCQ</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “The theory part is the <b>definition of sustainable development, resource planning, three-step resource planning, the starting part, and Agenda 21</b>. And in <b>land degradation — in which state, for which cause land degradation is happening</b> — that comes as an MCQ. Keep these things in mind.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>Definition of <b>sustainable development</b>; <b>resource planning</b>; <b>three-step resource planning</b>; the <b>starting part</b>; <b>Agenda 21</b>.</li>
+        <li><b>Land degradation — state-wise causes</b> → MCQ.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>three stages of resource planning</b> in India.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>What is <b>sustainable development</b>? Why is resource planning essential?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>Agenda 21</b>? / Explain Gandhiji's statement “there is enough for everybody's need and not for anybody's greed”.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Classify resources on any one basis (origin / exhaustibility / status of development / distribution).</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Explain the causes of <b>land degradation</b> in India, state-wise.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Distinguish between <b>alluvial, black and laterite soils</b>.</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Resource planning in India (3M)</summary>
+        <ol>
+          <li><b>Identification and inventory of resources</b> across the regions of the country — this involves surveying, mapping and the qualitative estimation and measurement of the resources.</li>
+          <li><b>Evolving a planning structure</b> endowed with appropriate technology, skill and institutional set-up for implementing the resource development plans.</li>
+          <li><b>Matching the resource development plans with the overall national development plans.</b></li>
+          <li>Why it is needed: <b>resource planning is essential for the sustainable existence of all forms of life</b> — the irrational consumption and over-utilisation of resources have led to socio-economic and environmental problems, to the depletion of resources, and to the accumulation of resources in a few hands.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Sustainable development &amp; Agenda 21 (3M)</summary>
+        <ol>
+          <li><b>Sustainable development</b>: the Brundtland Report (1987) defined it as “development that meets the needs of the present without compromising the ability of future generations to meet their own needs”.</li>
+          <li><b>Agenda 21</b>: it is the declaration signed by the world leaders in <b>1992 at the United Nations Conference on Environment and Development (UNCED) held at Rio de Janeiro, Brazil</b>, aiming at achieving global sustainable development and taking concrete steps to save the Earth.</li>
+          <li>Its aim: to combat environmental damage, poverty and disease through global co-operation on common interests, mutual needs and shared responsibilities.</li>
+          <li>Gandhiji's statement captures the same idea: <b>“There is enough for everybody's need and not for anybody's greed.”</b></li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>MCQ drill — land degradation, state-wise:</b> over-grazing and shifting cultivation, deforestation and mining → <b>Jharkhand, Chhattisgarh, Madhya Pradesh and Odisha</b>; <b>water-logging, salinity and alkalinity</b> caused by over-irrigation → <b>Punjab, Haryana and western Uttar Pradesh</b>; <b>wind erosion and desertification</b> → <b>Rajasthan and Gujarat</b>, and the coastal sandy areas of Odisha, Kerala, Tamil Nadu and Gujarat. Also revise the six major soil types — alluvial, black (regur), red and yellow, laterite, arid and forest soils.</div>
+    </div>
+  </div>
+
+  <!-- G2 -->
+  <div class="ch geo" id="g2" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 2</span><span class="ch-name">Forest and Wildlife Resources</span>
+      <span class="ch-marks">one 5M + MCQs</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “<b>Map work does NOT come from this chapter.</b> And there are <b>only three buckets in this chapter</b>: (1) what steps did the <b>government</b> take — the <b>Wildlife (Protection) Act</b> becomes important, <b>Project Tiger</b> becomes an important question, and MCQs come on which tiger reserve is where; (2) what steps did the <b>community</b> take — <b>those five points</b> around Sariska <b>(Alwar district of Rajasthan)</b>, the <b>Chipko movement</b>, the <b>Beej Bachao Andolan</b>, and <b>Joint Forest Management</b> — that <b>directly makes one 5-mark question</b>.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Government's steps</b>: the Wildlife (Protection) Act; Project Tiger; which tiger reserve is in which state (MCQ).</li>
+        <li><b>Community's steps</b>: the five points — Sariska (Alwar, Rajasthan), Chipko, Beej Bachao Andolan, Joint Forest Management → one 5M.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Describe the <b>community and government efforts for the conservation of forest and wildlife</b> in India.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>Project Tiger</b>? Why was it launched?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Explain the <b>Chipko movement</b> / the <b>Beej Bachao Andolan</b> / <b>Joint Forest Management</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Differentiate between <b>endangered, vulnerable, rare, endemic and extinct species</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>What does the <b>Wildlife (Protection) Act, 1972</b> provide for?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Community &amp; government conservation (5M)</summary>
+        <ol>
+          <li><b>Sariska Tiger Reserve, Alwar district of Rajasthan</b>: the villagers of five villages in the Alwar district declared 1,200 hectares of forest as the <b>Bhairovdev Sanctuary</b> and framed their own rules — no hunting, no tree felling, and a ban on the mining that threatened the forest; they also revived the age-old customs of water harvesting.</li>
+          <li><b>The Chipko Movement, Himalayas (Uttarakhand)</b>: in the 1970s, the village women of <b>Reni</b> in the Garhwal Himalayas, led by <b>Gaura Devi</b>, hugged the trees to prevent the contractors from felling them — the movement took up the slogan “<b>what do the forests bear? Soil, water and pure air</b>” — and it led to a 15-year ban on green felling in the Himalayan forests.</li>
+          <li><b>The Beej Bachao Andolan — the Save the Seeds movement</b>: begun in the 1980s in <b>Jardhargaon village, Tehri (Uttarakhand)</b>, the farmers led by <b>Vijay Jardhari</b> began to cultivate <b>traditional varieties of seeds</b> instead of high-yielding hybrid seeds; the traditional varieties were found to give higher yields and to be resistant to disease, and the movement saved the local varieties of rice, beans and other crops.</li>
+          <li><b>Joint Forest Management (JFM)</b>: the programme was first experimented with at <b>Arabari in the Midnapore district of West Bengal in 1972</b>, and was formally adopted through the <b>National Forest Policy of 1988</b>; the village communities protect and manage the degraded forests and in return get a share of the non-timber forest produce and of the timber; JFM works well in <b>Odisha, West Bengal, Bihar, Haryana and Madhya Pradesh</b>.</li>
+          <li><b>The government's steps</b>: the <b>Wildlife (Protection) Act, 1972</b>, which provides for the protection of wild animals, birds and plants and regulates hunting; <b>Project Tiger (1973)</b>, which aims at protecting the tiger in its habitat; the setting up of <b>national parks, wildlife sanctuaries and biosphere reserves</b>; and the <b>National Forest Policy, 1988</b>, which involves the local communities in the management of the forests.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>Species categories for MCQ:</b> <b>Endangered</b> — in danger of extinction (black buck, Indian rhino, lion-tailed macaque); <b>Vulnerable</b> — likely to move into the endangered category (blue sheep, Asiatic elephant, Gangetic dolphin); <b>Rare</b> — small population (Himalayan brown bear, desert fox, hornbill); <b>Endemic</b> — found only in a particular area (Andaman teal, Nicobar pigeon, mithun in Arunachal Pradesh); <b>Extinct</b> — no longer found (Asiatic cheetah, pink head duck). India has about <b>47,000 plant species</b> and <b>89,000 animal species</b>, and is one of the world's twelve mega-biodiversity countries.</div>
+      <div class="warnbox"><b>Remember:</b> no map work from this chapter.</div>
+    </div>
+  </div>
+
+  <!-- G3 -->
+  <div class="ch geo" id="g3" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 3</span><span class="ch-name">Water Resources</span>
+      <span class="ch-marks">3M / 5M</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span><span class="badge b5">5M</span>
+      <div class="verdict"><b>Verdict:</b> “A straightforward chapter — also in three parts, like the previous one. <b>(1) Causes of water scarcity and their solutions</b> — the theory question comes from here. <b>(2) Dams and rainwater harvesting</b> — <b>the question is made on the positives and negatives of dams; this is important.</b> <b>(3) Ancient hydrological structures</b> — one question in 3 marks or 5 marks is made from here.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Causes of water scarcity and their solutions</b>.</li>
+        <li><b>Positives and negatives of dams</b> (important).</li>
+        <li><b>Ancient hydrological structures</b> (3M or 5M).</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>causes of water scarcity</b> in India and suggest measures for conservation.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>advantages and disadvantages of multi-purpose river projects / dams</b>.</td><td><span class="badge b5">5M</span><span class="badge bhot">Important</span></td></tr>
+          <tr><td>Why are multi-purpose projects opposed? (the Narmada Bachao Andolan)</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Describe the <b>ancient hydraulic structures</b> of India.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Describe the traditional <b>methods of rainwater harvesting</b> in different parts of India.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Dams: positives and negatives (5M)</summary>
+        <ol>
+          <li><b>Positive — irrigation</b>: multi-purpose projects provide water for irrigation, making it possible to grow crops even in the dry season and to bring more area under cultivation.</li>
+          <li><b>Positive — power and water supply</b>: they generate <b>hydroelectricity</b>, supply water for domestic and industrial uses, and provide for <b>flood control</b>, recreation, inland navigation and fish breeding. Jawaharlal Nehru proudly proclaimed the dams as the <b>“temples of modern India”</b>, for they would integrate the development of agriculture and the village economy with the rapid industrialisation and the growth of the urban economy.</li>
+          <li><b>Negative — displacement</b>: the projects have displaced a very large number of peasants and tribals without adequate compensation or rehabilitation. The <b>Sardar Sarovar Project</b> alone has displaced thousands of tribal families, which led to the <b>Narmada Bachao Andolan (Save the Narmada Movement)</b>.</li>
+          <li><b>Negative — unequal distribution and environmental cost</b>: the benefits have gone largely to the rich landowners and the industrialists, while the costs have been borne by the poor, the tribals and the Dalits; the projects have caused large-scale deforestation and the loss of biological diversity, and have led to <b>waterlogging and soil salinity</b>.</li>
+          <li><b>Negative — conflicts</b>: the multipurpose projects have also caused <b>inter-state water disputes</b> — the <b>Krishna-Godavari</b> and the <b>Cauvery</b> disputes are examples — and most of the objections to the dams relate to their social and environmental costs and to the question of <b>who actually benefits from them</b>.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Ancient hydraulic structures &amp; rainwater harvesting (3–5M)</summary>
+        <ol>
+          <li><b>The Grand Anicut Canal (Kallanai)</b> on the river <b>Kaveri</b>, built in the <b>first century AD</b> by <b>Karikala Chola</b>, is the oldest water-regulation structure in India and is <b>still in use</b>.</li>
+          <li><b>Bhopal's Upper Lake</b> was built by <b>Raja Bhoj in the eleventh century</b>; similar ancient structures include the lakes and tanks of <b>Udaipur, Jodhpur, Bikaner, Nagaur, Jhalawar, Srinagar, Pushkar and Kolkata</b>.</li>
+          <li>In the <b>hill and mountainous regions</b>, people built diversion channels like the <b>‘guls' or ‘kuls' of the Western Himalayas</b> for agriculture.</li>
+          <li>In the <b>arid and semi-arid regions</b>, agricultural fields were converted into rain-fed storage structures — the <b>‘khadins' of Jaisalmer</b> and the <b>‘johads' of the Alwar district of Rajasthan</b>; in Rajasthan the underground <b>‘tankas'</b> store the rooftop rainwater for drinking.</li>
+          <li>In the <b>plains and the Bengal basin</b>, inundation channels were developed: in the flood plains of <b>Bihar</b> the <b>‘ahars' and ‘pynes'</b>; in <b>Maharashtra</b> the <b>‘bhandhara phad' and ‘pats'</b>; in <b>Karnataka</b> the <b>‘kattas'</b>; and in <b>Meghalaya</b> — the wettest place on earth, Mawsynram and Cherrapunji — the <b>200-year-old bamboo drip irrigation system</b> transports water over several hundred metres through bamboo pipes. <b>Tamil Nadu</b> became the first state to make rooftop rainwater harvesting compulsory.</li>
+        </ol>
+      </details>
+    </div>
+  </div>
+
+  <!-- G4 -->
+  <div class="ch geo" id="g4" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 4</span><span class="ch-name">Agriculture</span>
+      <span class="ch-marks">3M / 5M + objective</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “Also well sorted. <b>Primitive subsistence, intensive subsistence and commercial farming</b> are asked in ‘compare between' questions. <b>Rabi, Kharif, Zaid</b> also comes in objective — four points are given and you're told ‘identify the type of cropping season'. The <b>crops part is mainly asked in objective</b> — the hack is simple, use the chart I gave you. <b>🔥 But one part IS asked in theory in 3 marks / 5 marks — the Technological and Institutional Reforms topic. DO NOT MISS THIS TOPIC.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Primitive, intensive subsistence and commercial farming</b> → compare-between.</li>
+        <li><b>Rabi, Kharif, Zaid</b> → objective identification.</li>
+        <li><b>Crops</b> → objective only, via the chart.</li>
+        <li><b>🔥 Technological and Institutional Reforms</b> → 3M/5M theory. Do not miss.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Distinguish between <b>primitive subsistence, intensive subsistence and commercial farming</b>.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>technological and institutional reforms</b> introduced in Indian agriculture after Independence.</td><td><span class="badge b5">5M</span><span class="badge bhot">Do not miss</span></td></tr>
+          <tr><td>Distinguish between the <b>Rabi, Kharif and Zaid</b> cropping seasons with examples of crops.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Explain the geographical conditions required for the growth of <b>rice / wheat / cotton / sugarcane / tea / jute</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Identify the cropping season from four given points (a typical objective question).</td><td><span class="badge b1">1M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Technological &amp; Institutional Reforms (5M) — the one he says never to miss</summary>
+        <ol>
+          <li><b>Collectivisation, consolidation of holdings and the abolition of zamindari</b>: after Independence the government abolished the zamindari system and promoted the consolidation of land holdings so that the fragmented holdings could be made more productive.</li>
+          <li><b>The Green Revolution</b>: in the late 1960s the introduction of <b>high-yielding variety (HYV) seeds</b> and the greater use of <b>chemical fertilisers, insecticides and pesticides</b>, together with irrigation, made it possible to raise the yield per unit area; the production of wheat increased manifold.</li>
+          <li><b>Other revolutions</b>: the <b>White Revolution (Operation Flood)</b> in milk production, the <b>Golden Revolution</b> in horticulture and the <b>Blue Revolution</b> in fish production are other milestones.</li>
+          <li><b>Institutional reforms — credit and insurance</b>: the <b>Kisan Credit Card (KCC)</b> and the <b>Personal Accident Insurance Scheme (PAIS)</b>, <b>crop insurance</b> against natural disasters and crop failure, and the <b>Minimum Support Price</b> to protect the farmers from the fluctuations of the market.</li>
+          <li><b>Institutional reforms — support and information</b>: subsidies on agricultural inputs like fertilisers and power, <b>special weather bulletins and agricultural programmes for the farmers on the radio and television</b>, and the <b>Mahatma Gandhi National Rural Employment Guarantee Act, the Annapurna and the Antyodaya schemes</b> to support the rural people; the <b>Bhoodan-Gramdan</b> movement of Vinoba Bhave also sought to redistribute land.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — The three cropping seasons (3M)</summary>
+        <ol>
+          <li><b>Kharif</b>: sown with the <b>onset of the monsoon</b> in different parts of the country and <b>harvested in September–October</b>. Important crops: <b>paddy, maize, jowar, bajra, tur (arhar), moong, urad, cotton, jute, groundnut and soyabean</b>.</li>
+          <li><b>Rabi</b>: sown in <b>winter from October to December</b> and <b>harvested in summer from April to June</b>. Important crops: <b>wheat, barley, peas, gram and mustard</b> — the success of the wheat crop in the north and north-western parts of India largely depends upon the rainfall from the western disturbances and the north-east monsoon.</li>
+          <li><b>Zaid</b>: a short season <b>between the rabi and the kharif seasons</b> during the summer months; the crops are <b>watermelon, muskmelon, cucumber, vegetables and fodder crops</b>.</li>
+          <li><b>Logic to apply:</b> three crops of paddy — <b>aus, aman and boro</b> — are grown in Assam, West Bengal and Odisha; and in Punjab, Haryana, western Uttar Pradesh and Rajasthan, the development of <b>canal irrigation and tubewells</b> has made it possible to grow rice even in areas of less rainfall.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>The “why here” logic the teacher keeps insisting on:</b> cotton grows in the <b>Maharashtra–Gujarat belt because of the black cotton soil (regur) of the Deccan plateau</b> — black soil is moisture-retentive and therefore ideal for cotton. Similarly, tea grows on the hill slopes with well-drained soil and heavy rainfall (Assam, Darjeeling, the Nilgiris), and jute grows in the flood plains of the Hugli basin where the soil is renewed every year. Remember the local names of shifting cultivation too — <b>jhum</b> in the north-east, <b>bewar/dahiya</b> in Madhya Pradesh, <b>podu/penda</b> in Andhra Pradesh, <b>koman/bringa</b> in Odisha, <b>kuruwa</b> in Jharkhand.</div>
+    </div>
+  </div>
+
+  <!-- G5 -->
+  <div class="ch geo" id="g5" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 5</span><span class="ch-name">Minerals and Energy Resources</span>
+      <span class="ch-marks">1 theory topic + objective</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “<b>‘Mode of occurrence of minerals' is a direct theory topic — remember this topic for theory.</b> After that it is all minerals and minerals — and all these minerals will be asked <b>only in objective</b>. No big theory question is made from this. The one theory bit in between is <b>why conservation of minerals is important — the value-based questions</b> can be made from this chapter in that way.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Mode of occurrence of minerals</b> — the one theory topic. Must remember.</li>
+        <li><b>Why conservation of minerals is important</b> — value-based question.</li>
+        <li>Individual minerals → objective only.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Describe the <b>mode of occurrence of minerals</b> in rocks.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Why is the <b>conservation of minerals</b> essential? Suggest measures.</td><td><span class="badge b3">3M</span><span class="badge bcase">Value-based</span></td></tr>
+          <tr><td>Distinguish between <b>conventional and non-conventional sources of energy</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Classify minerals as <b>metallic, non-metallic and energy minerals</b>.</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Mode of occurrence of minerals (3–5M)</summary>
+        <ol>
+          <li><b>In igneous and metamorphic rocks</b>: the minerals may occur in the cracks, crevices, faults or joints. The smaller occurrences are called <b>veins</b> and the larger ones are called <b>lodes</b>; the minerals generally found in the veins and the lodes are <b>tin, copper, zinc and lead</b>.</li>
+          <li><b>In sedimentary rocks</b>: a number of minerals occur in <b>beds or layers</b>, having been formed as a result of accumulation and concentration in horizontal strata — <b>coal, iron ore, gypsum, potash salt and sodium salt</b> are found in this way.</li>
+          <li><b>By the decomposition of surface rocks</b>: the decomposition of the surface rocks and the removal of the soluble constituents leaves a residual mass of weathered material containing the ore — <b>bauxite</b> is formed in this way.</li>
+          <li><b>As alluvial (placer) deposits</b>: the minerals occur in the sands of the valley floors and at the base of the hills; these deposits generally contain the minerals that are not corroded by water — <b>gold, silver, tin and platinum</b>.</li>
+          <li><b>In the ocean waters</b>: the ocean waters contain large amounts of minerals — <b>common salt, magnesium and bromine</b> are largely derived from them, and <b>manganese nodules</b> are found on the ocean floor.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Conservation of minerals (3M, value-based)</summary>
+        <ol>
+          <li>Minerals are <b>non-renewable</b> — they take thousands of years to form, so their stock is finite and they must be used in a <b>planned and sustainable manner</b>.</li>
+          <li>The <b>higher grade ores are being exhausted first</b>, and the wasteful methods of mining and processing have led to the loss of a large part of the mineral.</li>
+          <li><b>Improved technologies</b> need to be constantly evolved so that the low-grade ores can be used at a low cost.</li>
+          <li>The <b>recycling of metals</b>, using scrap metals and other substitutes, is a step towards conserving the mineral resources for the future.</li>
+          <li>The Gandhian idea applies here too: <b>“There is enough for everybody's need and not for anybody's greed”</b> — the use of minerals must be guided by need and not by greed.</li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>Light touch:</b> don't write long theory on individual minerals — the teacher says only objective questions come from them. Do drill the standard pairs for MCQ: <b>Jharia–coal (Jharkhand)</b> · <b>Kudremukh and Bailadila–iron ore</b> · <b>Koraput–bauxite</b> · <b>Khetri–copper</b> · <b>Balaghat–manganese</b> · <b>Kodarma (Jharkhand)–mica</b> · <b>Mumbai High–petroleum</b> · <b>Neyveli (Tamil Nadu)–lignite</b> · <b>Jaisalmer–wind power</b> · <b>Kalpakkam and Tarapur–nuclear power</b> · <b>Nagarjuna Sagar, Bhakra Nangal, Koyna, Hirakud–hydel power</b>.</div>
+    </div>
+  </div>
+
+  <!-- G6 -->
+  <div class="ch geo" id="g6" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 6</span><span class="ch-name">Manufacturing Industries</span>
+      <span class="ch-marks">theory + objective</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span><span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “<b>The moment you open the chapter, the first topic gives four points directly — Importance of Manufacturing; theory comes from here.</b> After that come the individual manufacturing industries — <b>not subjective questions, more objective questions</b>. But <b>at the end: what damage are manufacturing industries causing to the environment? — that is a theory segment; theory questions will be made from there.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Importance of manufacturing</b> — the four points at the start (theory).</li>
+        <li><b>Industrial pollution and environmental degradation</b> — the theory segment at the end.</li>
+        <li>Individual industries → objective.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>importance of manufacturing</b> in the Indian economy.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>How do industries pollute the environment? Suggest <b>measures to control industrial pollution</b>.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the factors influencing the <b>location of industries</b>.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Classify industries on any one basis (raw material / role / ownership / size).</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Why are the cotton textile / jute / sugar / iron and steel industries located where they are?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Importance of manufacturing (5M) — the four points in the opening</summary>
+        <ol>
+          <li>Manufacturing <b>helps in modernising agriculture</b>, which forms the backbone of our economy — it provides the farm implements, the irrigation pumps, the fertilisers, the pesticides and the insecticides.</li>
+          <li>It helps to <b>reduce the heavy dependence of the people on agricultural income</b> by providing them jobs in the <b>secondary and the tertiary sectors</b>.</li>
+          <li><b>Industrial development is a precondition for the eradication of unemployment and poverty</b> from our country — manufacturing absorbs a large part of the labour force.</li>
+          <li><b>The export of manufactured goods expands trade and commerce</b> and brings in much-needed foreign exchange.</li>
+          <li>The countries that <b>transform their raw materials into a wide variety of finished goods of higher value are prosperous</b> — agriculture and industry are not exclusive of each other, but move together.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Industrial pollution &amp; its control (3–5M)</summary>
+        <ol>
+          <li><b>Air pollution</b>: caused by the presence of a high proportion of undesirable gases such as <b>sulphur dioxide and carbon monoxide</b>, and by the smoke emitted by chemical and paper factories, brick kilns, refineries and smelting plants and by the burning of fossil fuels.</li>
+          <li><b>Water pollution</b>: caused by the <b>organic and inorganic industrial wastes and effluents</b> discharged into the rivers — the pollution of the Damodar, the Ganga and the Sabarmati are examples — which affects aquatic life and makes the water unfit for use.</li>
+          <li><b>Thermal pollution</b>: the discharge of hot water from the factories and the thermal plants raises the temperature of the water bodies and adversely affects the aquatic life.</li>
+          <li><b>Noise pollution</b>: caused by industrial and construction activities, machinery and factory equipment; it causes auditory impairment, high blood pressure and stress.</li>
+          <li><b>Control measures</b>: (i) minimise water use by <b>reusing and recycling it in two or more successive stages</b>; (ii) <b>harvest rainwater</b> to meet the water requirements; (iii) <b>treat the hot water and the industrial effluents</b> before releasing them into the rivers and the ponds; (iv) <b>prevent the overdrawing of groundwater reserves by industry</b>; (v) fit <b>smoke stacks, electrostatic precipitators, fabric filters and scrubbers</b>, and use oil or gas instead of coal; (vi) switch to clean and non-conventional sources of energy such as <b>solar and wind power</b>.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>MCQ drill (individual industries):</b> the first successful cotton textile mill at <b>Mumbai (1854)</b>; the first jute mill at <b>Rishra on the river Hugli (1855)</b>; <b>TISCO at Jamshedpur (1907)</b>; iron and steel plants at <b>Bhilai (Chhattisgarh), Bokaro (Jharkhand), Durgapur (West Bengal) and Rourkela (Odisha)</b>; aluminium smelting at <b>Koraput (Odisha), Alwaye (Kerala) and Renukoot (Uttar Pradesh)</b>; IT hubs at <b>Bengaluru, Hyderabad, Pune, Chennai and Noida</b>.</div>
+    </div>
+  </div>
+
+  <!-- G7 -->
+  <div class="ch geo" id="g7" data-book="geo">
+    <div class="ch-head">
+      <span class="ch-no">CH 7</span><span class="ch-name">Lifelines of National Economy</span>
+      <span class="ch-marks">MAP WORK ONLY</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge bmap">Map</span>
+      <div class="verdict"><b>Verdict:</b> “<b>Theory does not come from this chapter. Only map work comes from Chapter 7</b> — Lifelines of National Economy. I have already covered its map work in the map-work video.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Map work only.</b> No theory.</li>
+        <li>Also revise <b>dams</b> and <b>minerals</b> for the map — he calls them double-priority (map + theory).</li>
+      </ul>
+
+      <div class="hotbox">
+        <b>Map items to mark on the India map (Chapter 7 + the two double-priority topics):</b>
+        <table style="margin-top:8px">
+          <thead><tr><th style="width:30%">Category</th><th>Items</th></tr></thead>
+          <tbody>
+            <tr><td><b>Major sea ports</b></td><td>Kandla · Mumbai · Marmagao · New Mangalore · Kochi · Tuticorin · Chennai · Vishakhapatnam · Paradip · Kolkata (including Haldia)</td></tr>
+            <tr><td><b>International airports</b></td><td>Delhi · Mumbai · Kolkata · Chennai · Bengaluru · Hyderabad · Kochi · Thiruvananthapuram · Ahmedabad · Amritsar · Guwahati</td></tr>
+            <tr><td><b>Roadways</b></td><td>The <b>Golden Quadrilateral</b> super highways (Delhi–Mumbai–Chennai–Kolkata); the <b>North–South</b> and the <b>East–West corridors</b></td></tr>
+            <tr><td><b>Railways</b></td><td>The Konkan Railway along the western coast; the major rail heads of the broad gauge network</td></tr>
+            <tr><td><b>Dams</b> <span class="badge bmap">double-priority</span></td><td>Bhakra Nangal · Hirakud · Sardar Sarovar · Nagarjuna Sagar · Tehri · Rihand · Koyna · Damodar Valley</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warnbox"><b>Do not write theory answers from this chapter</b> — spend that time on the map instead, which is where the marks are.</div>
+    </div>
+  </div>
+</section>
+<!-- ============================ ECONOMICS ============================ -->
+<section class="book" id="economics">
+  <h2><span class="dot" style="background:var(--eco)"></span> Book 4 — Economics <small style="color:var(--muted);font-weight:400">(Understanding Economic Development · 20 marks)</small></h2>
+  <p class="sub">Teacher's first correction: <b>“If I say four chapters are coming in this book, even that is wrong — because the fourth chapter, Globalisation, has only one topic coming from it anyway.”</b> He flags <b>Chapters 2 and 3 as the highest-probability theory chapters</b>.</p>
+
+  <!-- E1 -->
+  <div class="ch eco" id="e1" data-book="eco">
+    <div class="ch-head">
+      <span class="ch-no">CH 1</span><span class="ch-name">Development</span>
+      <span class="ch-marks">theory + 1 objective</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span><span class="badge b5">5M</span><span class="badge b1">MCQ</span>
+      <div class="verdict"><b>Verdict:</b> “<b>Different people, different developmental goals</b> — write it down, it's an important topic; a theory-based question definitely comes from here. Then <b>how to compare different countries — the average income topic</b> becomes very important. And <b>the World Bank's criteria — the World Development Report; likewise the Human Development Report brought out by UNDP, whose index treats education, health and income — all three — as important. A theory question comes on this.</b> Apart from this, <b>one objective question comes from the area where charts are given and you have to analyse the data</b>.”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Different people, different developmental goals</b> — theory question definitely comes.</li>
+        <li><b>How to compare different countries — average income</b>.</li>
+        <li><b>World Bank's World Development Report</b> + <b>UNDP's Human Development Report</b> (education, health, income).</li>
+        <li>The <b>chart/data analysis</b> objective.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain <b>why different persons can have different as well as conflicting notions of development</b> (with examples).</td><td><span class="badge b5">5M</span><span class="badge bhot">Certain</span></td></tr>
+          <tr><td>Why is <b>average income</b> an important criterion for development? What are its limitations?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>criteria used by the World Bank</b> and the <b>HDI of the UNDP</b> in classifying and ranking countries.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>sustainable development</b>? Give an example (groundwater, forests).</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>What are <b>public facilities</b>? Why are they needed?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Different people, different goals (5M)</summary>
+        <ol>
+          <li>Development is a <b>multi-dimensional concept</b> — what may be development for one may not be development for another; it may even be destructive for the other.</li>
+          <li><b>The industrialist vs the fisher-folk</b>: building a dam may bring electricity and industrial development, but it displaces the people and destroys the livelihood of the fisher-folk who depend on the river.</li>
+          <li><b>The landless labourer vs the rich farmer</b>: the landless rural labourer wants more days of work and better wages — more income and more equality — while the rich farmer wants higher support prices for his crop and cheaper, more easily available bank credit.</li>
+          <li><b>Women within the household</b>: a girl from a rich family may get opportunities similar to her brothers, but a girl from a poor household gets a smaller share of the food and of the family's resources.</li>
+          <li><b>Conclusion:</b> people therefore look at a mix of goals — <b>more income, more equality, freedom, security and respect for others</b> — and the developmental goals that are beneficial for one section of people may not be beneficial for another.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — World Bank &amp; HDI criteria (5M)</summary>
+        <ol>
+          <li>The <b>World Bank</b> uses <b>average income (per capita income)</b> as the criterion for classifying countries in its <b>World Development Report</b>: the countries with a high per capita income are called rich countries and those with a low per capita income are called low-income countries; India falls in the <b>middle-income</b> (low-middle-income) category.</li>
+          <li><b>Average income</b> is the <b>total income of the country divided by its total population</b> — a useful but incomplete measure, because it does not tell us how the income is distributed among the people.</li>
+          <li>The <b>UNDP</b> publishes the <b>Human Development Report</b>, which ranks the countries on the basis of the <b>Human Development Index (HDI)</b>.</li>
+          <li>The HDI uses <b>three inter-related criteria</b> — <b>education, health and income</b> — so it captures the well-being of the people rather than just their income.</li>
+          <li><b>Other criteria people use</b>: a mix of goals — more income, more equal distribution, freedom, security and respect — and the report also draws attention to the <b>sustainability of development</b> and to <b>public facilities</b> such as schools, health centres and safe drinking water.</li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>Objective drill:</b> practise reading the <b>tables and charts</b> in this chapter — the table of the monthly income of the citizens of two countries, and the HDI table. The teacher says one objective question is certain from the charts, where you must analyse the data and answer.</div>
+    </div>
+  </div>
+
+  <!-- E2 -->
+  <div class="ch eco" id="e2" data-book="eco">
+    <div class="ch-head">
+      <span class="ch-no">CH 2</span><span class="ch-name">Sectors of the Indian Economy</span>
+      <span class="ch-marks">highest theory probability</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge bcase">Case-based</span>
+      <div class="verdict"><b>Verdict:</b> “This is a good chapter of Economics — <b>the probability of theory questions coming is higher from Chapter 2 and Chapter 3</b>. The <b>three sectors and the comparison between them</b>, or ‘explain with examples how they are interdependent'. <b>Why did the tertiary sector rise in our country?</b> <b>Underemployment, GDP</b> — short-type questions. <b>How to create more employment</b> — because more people are employed in the primary sector — a question is definitely made. <b>Organised vs unorganised — case-based question and differentiate. Public sector vs private sector — compare-between.</b> And <b>why is the public sector still important today? — this question is definitely made.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li>The <b>three sectors</b> — comparison, and “explain with examples how they are interdependent”.</li>
+        <li><b>Why did the tertiary sector rise in our country?</b></li>
+        <li><b>Underemployment, GDP</b> → short answers.</li>
+        <li><b>How to create more employment</b> (because more people are employed in the primary sector).</li>
+        <li><b>Organised vs unorganised</b> → case-based + differentiate.</li>
+        <li><b>Public vs private sector</b> → compare-between.</li>
+        <li><b>Why is the public sector still important today?</b></li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain how the three sectors are <b>interdependent</b>, with examples.</td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>Explain the <b>rising importance of the tertiary sector</b> in India. <span class="badge bhot">⭐⭐ hack example</span></td><td><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>underemployment (disguised unemployment)</b>? Where is it most found?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How is the <b>GDP</b> of a country calculated? (final goods, value added)</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Distinguish between the <b>organised and unorganised sectors</b>.</td><td><span class="badge b3">3M</span><span class="badge bcase">Case</span></td></tr>
+          <tr><td>Distinguish between the <b>public and private sectors</b> / why is the public sector important?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Suggest <b>measures to create more employment</b> in rural areas.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Why did the tertiary sector rise? (5M) — the example he uses for Hack #1</summary>
+        <ol>
+          <li>In any country several <b>services such as hospitals, educational institutions, post and telegraph services, police stations, courts, defence, transport and banks are required</b> — these can be called the basic services, and in a developing country the government has to take the responsibility for their provision.</li>
+          <li>The <b>development of agriculture and industry leads to the development of services</b> such as transport, trade and storage; the greater the development of the primary and the secondary sectors, the greater is the demand for such services.</li>
+          <li>As <b>income levels rise</b>, certain sections of people start demanding many more services — <b>eating out, tourism, shopping, private hospitals, private schools and professional training centres</b>.</li>
+          <li>Over the past ten or fifteen years certain <b>new services, such as those based on information and communication technology</b>, have become important and essential.</li>
+          <li>Point to remember for the marking scheme: the <b>share of the tertiary sector in the GDP has increased the most</b>, while the share of the primary sector has declined — but the employment generated by the tertiary sector has not risen in the same proportion as its share in the GDP.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Organised vs unorganised sector (3M + case-based)</summary>
+        <ol>
+          <li><b>Definition</b>: the organised sector covers those enterprises or places of work where the <b>terms of employment are regular</b> and therefore the people have assured work; the unorganised sector is characterised by small and scattered units which are <b>largely outside the control of the government</b>.</li>
+          <li><b>Rules and registration</b>: the organised sector is <b>registered by the government</b> and has to follow the rules and regulations given in various laws such as the Factories Act, the Minimum Wages Act, the Payment of Gratuity Act and the Shops and Establishments Act; in the unorganised sector there are <b>no rules and regulations</b> that are followed.</li>
+          <li><b>Job security and benefits</b>: workers in the organised sector enjoy <b>security of employment</b>, work only a fixed number of hours, and get benefits such as the provident fund, gratuity and medical facilities. In the unorganised sector the <b>jobs are low-paid and often not regular</b>, there is <b>no provision for overtime, paid leave, holidays or leave due to sickness</b>, and the employment is subject to a <b>high degree of insecurity</b>.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Creating more employment &amp; the public sector (3–5M)</summary>
+        <ol>
+          <li>The problem: a large number of people in India are <b>employed in the primary sector</b>, and there is <b>underemployment (disguised unemployment)</b> — people appear to be employed but all of them are made to work less than their potential, which means that more people are employed than are really needed.</li>
+          <li><b>Measures to create more employment</b>: (i) identify, promote and <b>locate industries and services in the semi-rural areas</b> where a large number of people may be employed; (ii) <b>open more service-sector enterprises</b> such as a school, a training centre or a small hospital in the semi-rural areas; (iii) <b>invest in the basic agricultural infrastructure</b> such as a canal or a tube-well; (iv) <b>government spending</b> on the construction of roads, railway lines and canals; (v) provide <b>credit and support to the self-employed and to the small-scale industries</b>, and work through schemes such as the <b>MGNREGA</b>.</li>
+          <li><b>Why the public sector still matters</b>: the <b>purpose of the public sector is not just to earn profits</b>. The government owns most of the assets and provides the services — it raises money through taxes and other revenues to pay for the services which it provides to the people.</li>
+          <li>The public sector provides the <b>basic facilities — education, health, food and security</b> — to the people, and it is the duty of the government to provide these facilities at an affordable cost.</li>
+          <li>The <b>activities of the private sector are guided by the motive to earn profits</b>; several things that the public sector does — such as building roads, generating electricity, and providing health and education to the poor — are needed by the people but are not profitable for the private sector.</li>
+        </ol>
+      </details>
+    </div>
+  </div>
+
+  <!-- E3 -->
+  <div class="ch eco" id="e3" data-book="eco">
+    <div class="ch-head">
+      <span class="ch-no">CH 3</span><span class="ch-name">Money and Credit</span>
+      <span class="ch-marks">highest theory probability</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b5">5M</span><span class="badge b3">3M</span><span class="badge b1">1–2M</span>
+      <div class="verdict"><b>Verdict:</b> “Money and Credit has many theory parts. <b>Formal sector vs informal sector — these comparison parts become important.</b> But before that, <b>loan activities of banks — an important theory question.</b> <b>Barter exchange? Double coincidence of wants? — these become small definition-type questions.</b> And if I tell you two important topics that always come in theory: <b>one is Self Help Groups — what are they, why are they, what is their importance; and the second, why cheap and affordable credit should be given.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Formal vs informal sector of credit</b> (comparison).</li>
+        <li><b>Loan activities of banks</b> (important theory).</li>
+        <li><b>Barter exchange</b> and <b>double coincidence of wants</b> (definitions).</li>
+        <li><b>🔥 Self Help Groups</b> — what, why, importance.</li>
+        <li><b>🔥 Why cheap and affordable credit should be given.</b></li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>Explain the <b>loan activities of banks</b> in India.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>Distinguish between the <b>formal and informal sources of credit</b>.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is <b>barter exchange</b>? What is the <b>double coincidence of wants</b>?</td><td><span class="badge b1">1–2M</span></td></tr>
+          <tr><td>What are <b>Self Help Groups</b>? Explain their functioning and importance.</td><td><span class="badge b5">5M</span><span class="badge bhot">Always comes</span></td></tr>
+          <tr><td>Why should <b>cheap and affordable credit</b> be made available to the borrowers?</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span><span class="badge bhot">Always comes</span></td></tr>
+          <tr><td>Explain the <b>terms of credit</b>. (interest rate, collateral, documentation, mode of repayment)</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>How does money solve the problem of the double coincidence of wants?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Loan activities of banks (3–5M)</summary>
+        <ol>
+          <li><b>Banks accept deposits</b> from the public and pay an <b>interest</b> on them; the deposits are of two types — the <b>demand deposits</b>, which can be withdrawn on demand, and the <b>time deposits</b>, which are repayable only after a fixed period.</li>
+          <li><b>Banks keep only a small proportion of their deposits as cash</b> with themselves (about 15%) — this is kept as provision to pay the depositors who might come to withdraw money from the bank on any given day.</li>
+          <li><b>Banks use the major portion of the deposits to extend loans</b> — they are able to lend because only a fraction of the depositors come to withdraw cash on any particular day.</li>
+          <li><b>The banks charge a higher rate of interest on the loans than what they offer on the deposits</b>, and the <b>difference between the two rates of interest is their main source of income</b>.</li>
+          <li><b>The RBI supervises the functioning of the formal sources of loans</b>: it monitors the banks in actually maintaining the cash balance, and it sees that the banks give loans not just to the profit-making businesses and the traders but also to the small cultivators, the small-scale industries and to the small borrowers.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Self Help Groups (5M) — the topic he says always comes</summary>
+        <ol>
+          <li><b>What they are</b>: a Self Help Group is a small group of about <b>20 people</b> — usually poor women from the same neighbourhood or village — who pool their savings and meet regularly to save and to lend among themselves.</li>
+          <li><b>How they work</b>: the group collects a small amount from each member every month, maintains a common fund, and gives loans to the members at a low rate of interest for their needs — to buy seeds or a sewing machine, to start a small business, or to meet an emergency.</li>
+          <li><b>Why they matter — collateral</b>: the biggest advantage is that they help the borrowers <b>overcome the problem of the lack of collateral</b>. The group stands as a guarantee for the loan, and the regular repayments build a record that makes the group eligible for a bank loan.</li>
+          <li><b>Why they matter — the bank link</b>: once the group is able to convince the bank about its credit-worthiness, <b>the bank lends to the whole group without any collateral</b>, and the members decide the purpose of the loan and its repayment — this is the <b>micro-credit programme</b>.</li>
+          <li><b>Importance</b>: the SHGs are the building blocks of the organisation of the rural poor; they help women to become <b>financially self-reliant</b>, to access cheap and affordable credit, to escape the clutches of the moneylender, and to gain the self-confidence to participate in decision-making — there are estimated to be over a million SHGs working in India, and they have also helped in the <b>empowerment of women</b>.</li>
+        </ol>
+      </details>
+
+      <details><summary>✍️ Answer points — Why cheap and affordable credit matters (3–5M)</summary>
+        <ol>
+          <li>Credit plays a <b>vital and positive role</b> in the development of the country: it helps people from all walks of life to set up their business, to increase their income and to improve their living conditions.</li>
+          <li><b>Crop production involves significant costs</b> — the farmers need credit to buy the seeds, the fertilisers, the pesticides and the water, and to repair their farm implements and to buy a tractor.</li>
+          <li><b>Cheap and affordable credit helps the small farmers to tide over crop failure</b> caused by natural disasters such as drought or flood, and it keeps them from being caught in a <b>debt trap</b>.</li>
+          <li>The <b>formal sector credit is much cheaper</b> than the informal sector — the moneylenders charge a very high rate of interest, and there is no organisation which supervises the credit activities of the lenders in the informal sector. The higher cost of borrowing means that a larger part of the earnings of the borrower is used to repay the loan.</li>
+          <li>Therefore, the <b>formal sources of credit need to expand</b>, and cheap and affordable credit needs to be made available to the people in the rural areas — it is the responsibility of the RBI and the government to monitor this and to ensure that it happens.</li>
+        </ol>
+      </details>
+
+      <div class="notebox"><b>Definitions in one line each:</b><br>
+        · <b>Barter system</b> — a system in which goods are directly exchanged without the use of money.<br>
+        · <b>Double coincidence of wants</b> — what a person desires to sell is exactly what the other person wishes to buy; money removes this requirement by acting as a medium of exchange.<br>
+        · <b>Collateral</b> — an asset that the borrower owns and uses as a guarantee to a lender until the loan is repaid.<br>
+        · <b>Terms of credit</b> — the interest rate, the collateral and documentation requirement, and the mode of repayment, which together vary from one credit arrangement to another.</div>
+    </div>
+  </div>
+
+  <!-- E4 -->
+  <div class="ch eco" id="e4" data-book="eco">
+    <div class="ch-head">
+      <span class="ch-no">CH 4</span><span class="ch-name">Globalisation</span>
+      <span class="ch-marks">one topic only — low possibility</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span>
+      <div class="verdict"><b>Verdict:</b> “Globalisation is in itself a very small chapter. So: the <b>definition of globalisation</b>, and along with it the <b>two factors which enabled globalisation — technology and liberalisation</b>. On both, individual questions can come, or it can be asked as ‘factors that have enabled globalisation'. <b>But the possibility is low.</b>”</div>
+
+      <h4 class="blk">Study these <span class="badge bhot">as told in the video</span></h4>
+      <ul class="tick">
+        <li><b>Definition of globalisation</b>.</li>
+        <li>The two enabling factors: <b>technology</b> and <b>liberalisation</b>.</li>
+      </ul>
+
+      <h4 class="blk">Probable questions</h4>
+      <table>
+        <thead><tr><th style="width:62%">Question</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr><td>What is <b>globalisation</b>? Explain any three of its effects on the Indian economy.</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>Explain the <b>factors that have enabled globalisation</b>.</td><td><span class="badge b3">3M</span><span class="badge b5">5M</span></td></tr>
+          <tr><td>What is a <b>MNC</b>? How do MNCs control production and spread their investments?</td><td><span class="badge b3">3M</span></td></tr>
+          <tr><td>What is <b>liberalisation</b>? Why was it introduced in 1991?</td><td><span class="badge b3">3M</span></td></tr>
+        </tbody>
+      </table>
+
+      <details><summary>✍️ Answer points — Definition &amp; the two enabling factors (3M)</summary>
+        <ol>
+          <li><b>Definition</b>: globalisation is the process of rapid <b>integration or interconnection between countries</b> — mostly through the flow of goods, services, investment, technology and ideas across the borders.</li>
+          <li><b>Factor 1 — technology</b>: the rapid improvement in <b>transport technology</b> (container ships, air freight) and in <b>information and communication technology</b> (the telephone, the internet, satellites) has made the movement of goods and the transmission of information across the world much faster and cheaper.</li>
+          <li><b>Factor 2 — liberalisation</b>: the removal of the barriers or the restrictions set up by the government on foreign trade and foreign investment, which began in India in <b>1991</b>, has allowed the MNCs to set up factories and offices and to invest in the country.</li>
+          <li><b>Effect</b>: MNCs set up production jointly with the local companies, and they exercise control over production through the <b>joint production, the buying of the local companies, and the placing of orders for the small producers</b> — this has led to greater choice and lower prices for the consumers, but the benefits of globalisation have not been shared equally.</li>
+        </ol>
+      </details>
+
+      <div class="warnbox"><b>Time-box this chapter to one sitting</b> — as the teacher says, the possibility of a question from it is low.</div>
+    </div>
+  </div>
+
+  <!-- E5 -->
+  <div class="ch eco" id="e5" data-book="eco">
+    <div class="ch-head">
+      <span class="ch-no">CH 5</span><span class="ch-name">Consumer Rights</span>
+      <span class="ch-marks">check your latest CBSE syllabus</span>
+    </div>
+    <div class="ch-body">
+      <span class="badge b3">3M</span>
+      <div class="verdict"><b>Note:</b> the teacher does not cover this chapter — he says only four chapters come from Economics, because “the fourth chapter, Globalisation, has only one topic coming from it anyway.” NCERT's Economics textbook does contain a fifth chapter on <b>Consumer Rights</b>. <b>Check your current CBSE syllabus / sample paper</b> and this chapter's status, and if it is included, do these points.</div>
+
+      <h4 class="blk">The essentials, if it is in your syllabus</h4>
+      <ul class="tick">
+        <li><b>The consumer movement in India</b> and the need for consumer awareness — the <b>COPRA (Consumer Protection Act, 1986)</b>, and the consumer courts at the district, state and national levels.</li>
+        <li><b>RTI (Right to Information, 2005)</b> and the right to seek redressal against unfair trade practices.</li>
+        <li><b>Six rights of consumers</b>: right to safety, right to be informed, right to choose, right to be heard, right to seek redressal, and right to consumer education.</li>
+        <li><b>Common malpractices</b>: adulteration, false claims in advertising, underweight and under-measure, selling defective goods, and charging a higher price than the MRP.</li>
+        <li><b>Symbols to know</b>: <b>ISI</b> (industrial products), <b>Agmark</b> (agricultural products), <b>Hallmark</b> (gold jewellery), and <b>FSSAI</b> (food products).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Built from the lecture <b>“Class 10 SST: High Weightage Chapters &amp; Topics From NCERT”</b> (Digraj Singh Rajput, 15:42). The “Verdict” and “Study these” blocks are the teacher's own words; the “Answer points” are NCERT-based notes written to the mark-scheme length. Pair this with <b>class10-sst-study-notes.html</b> for the method, the priority tiers and the day-by-day plan.
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var bar = document.getElementById('progress');
+  function onScroll(){
+    var h = document.documentElement;
+    var pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    bar.style.width = (pct || 0) + '%';
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+
+  var q = document.getElementById('q');
+  var chs = Array.prototype.slice.call(document.querySelectorAll('main .ch'));
+  var filter = 'all';
+
+  function apply(){
+    var term = (q.value || '').trim().toLowerCase();
+    chs.forEach(function(el){
+      var bookOk = (filter === 'all') || (el.getAttribute('data-book') === filter);
+      var textOk = !term || el.textContent.toLowerCase().indexOf(term) > -1;
+      el.style.display = (bookOk && textOk) ? '' : 'none';
+    });
+  }
+  q.addEventListener('input', apply);
+  Array.prototype.forEach.call(document.querySelectorAll('.pillbtn[data-f]'), function(b){
+    b.addEventListener('click', function(){
+      Array.prototype.forEach.call(document.querySelectorAll('.pillbtn[data-f]'), function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      filter = b.getAttribute('data-f');
+      apply();
+    });
+  });
+
+  var dets = Array.prototype.slice.call(document.querySelectorAll('main details'));
+  document.getElementById('openBtn').addEventListener('click', function(){
+    dets.forEach(function(d){ d.open = true; });
+  });
+  document.getElementById('closeBtn').addEventListener('click', function(){
+    dets.forEach(function(d){ d.open = false; });
+  });
+  document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+})();
+</script>
+</body>
+</html>
